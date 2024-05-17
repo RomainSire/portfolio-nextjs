@@ -1,8 +1,7 @@
-import "./reset.css";
-
 import { kreonFont, ubuntuFont } from "@/lib/fonts";
+import "@/styles/_reset.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
-import "./globals.css";
 
 type Props = Readonly<{
 	/**

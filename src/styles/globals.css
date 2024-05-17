@@ -1,9 +1,9 @@
 :root {
 	/* Colors */
-	--color-base: hsl(39, 29, 12);
-	--color-neutral: hsl(39, 51, 90);
-	--color-primary: hsl(39, 91, 69);
-	--color-secondary: hsl(0, 0, 100);
+	--color-base: hsl(39, 29%, 12%);
+	--color-neutral: hsl(39, 51%, 90%);
+	--color-primary: hsl(39, 91%, 69%);
+	--color-secondary: hsl(0, 0%, 100%);
 
 	/* Sizes (golden ratio) */
 	--size-xs: 6px;
