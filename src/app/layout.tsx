@@ -1,3 +1,5 @@
+import "./reset.css";
+
 import { kreonFont, ubuntuFont } from "@/lib/fonts";
 import type { Metadata } from "next";
 import "./globals.css";

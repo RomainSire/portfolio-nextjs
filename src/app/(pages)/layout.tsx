@@ -8,7 +8,7 @@ export default function PagesLayout({ children }: Props) {
 	return (
 		<>
 			<nav>
-				<ul>
+				<ul role="list">
 					<li>
 						<Link href={`/`}>Home</Link>
 					</li>

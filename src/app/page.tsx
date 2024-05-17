@@ -5,7 +5,7 @@ export default function HomePage() {
 		<main className={styles.main}>
 			<h1>Hey dude !</h1>
 			<nav>
-				<ul>
+				<ul role="list">
 					<li>
 						<a href="/about">About</a>
 					</li>
