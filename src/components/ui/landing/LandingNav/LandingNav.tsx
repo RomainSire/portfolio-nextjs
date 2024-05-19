@@ -1,8 +1,9 @@
-import LandingNavItem from "@/components/ui/landing/LandingNavItem";
+import LandingNavItem from "@/components/ui/landing/LandingNavItem/LandingNavItem";
+import style from "./LandingNav.module.css";
 
 export default function LandingNav() {
 	return (
-		<nav>
+		<nav className={style.navigation}>
 			<ul role="list">
 				<LandingNavItem href="/about">About</LandingNavItem>
 				<LandingNavItem href="/work">Work</LandingNavItem>
