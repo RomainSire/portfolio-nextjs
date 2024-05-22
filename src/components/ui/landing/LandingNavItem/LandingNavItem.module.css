@@ -4,10 +4,18 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	position: relative;
+	--font-size: 17vw;
+	--bullet-size: 10vw;
+}
+@media screen and (min-width: 1250px) {
+	.listItem {
+		--font-size: var(--size-4xl);
+		--bullet-size: var(--size-3xl);
+	}
 }
 
 .link {
-	font-size: var(--size-4xl);
+	font-size: var(--font-size);
 	font-family: var(--font-heading);
 	line-height: 1em;
 	letter-spacing: -0.03em;
@@ -15,13 +23,13 @@
 	transition: transform 200ms cubic-bezier(0.28, 0.84, 0.42, 1);
 }
 .listItem:hover .link {
-	transform: skewX(-15deg) translateX(calc(var(--size-3xl) + var(--size-md)));
+	transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--size-md)));
 }
 
 .bullet {
 	display: inline-block;
-	width: var(--size-3xl);
-	height: var(--size-3xl);
+	width: var(--bullet-size);
+	height: var(--bullet-size);
 	border-radius: 50%;
 	background-color: var(--color-primary);
 	border: solid var(--size-xs) var(--color-base);
