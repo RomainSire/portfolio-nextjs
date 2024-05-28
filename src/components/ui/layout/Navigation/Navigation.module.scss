@@ -1,0 +1,10 @@
+.list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--xl);
+	font-family: var(--font-heading);
+}
+.item {
+	font-size: 1.2rem;
+}

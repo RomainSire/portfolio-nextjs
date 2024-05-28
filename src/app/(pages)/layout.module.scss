@@ -1,0 +1,14 @@
+.header {
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--sm);
+}
+
+@media screen and (max-width: 650px) {
+	.header {
+		flex-direction: column;
+	}
+}

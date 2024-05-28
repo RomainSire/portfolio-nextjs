@@ -1,4 +1,6 @@
-import Link from "next/link";
+import Logo from "@/components/ui/layout/Logo/Logo";
+import Navigation from "@/components/ui/layout/Navigation/Navigation";
+import style from "./layout.module.scss";
 
 type Props = Readonly<{
 	children: React.ReactNode;
@@ -7,25 +9,10 @@ type Props = Readonly<{
 export default function PagesLayout({ children }: Props) {
 	return (
 		<>
-			<nav>
-				<ul role="list">
-					<li>
-						<Link href={`/`}>Home</Link>
-					</li>
-					<li>
-						<Link href={`/about`}>About</Link>
-					</li>
-					<li>
-						<Link href={`/work`}>Work</Link>
-					</li>
-					<li>
-						<Link href={`/blog`}>Blog</Link>
-					</li>
-					<li>
-						<Link href={`/contact`}>Contact</Link>
-					</li>
-				</ul>
-			</nav>
+			<header className={style.header}>
+				<Logo />
+				<Navigation />
+			</header>
 			<main>{children}</main>
 		</>
 	);
