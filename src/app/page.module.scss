@@ -1,11 +1,12 @@
+@import "@/styles/_mixins.scss";
+
 .main {
 	height: 100dvh;
 	display: grid;
 	place-items: center;
 	gap: var(--lg);
-}
-@media screen and (min-width: 1250px) {
-	.main {
+
+	@include desktop {
 		grid-template-columns: 5fr 7fr;
 	}
 }

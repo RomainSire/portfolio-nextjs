@@ -1,3 +1,5 @@
+@import "@/styles/_mixins.scss";
+
 .list {
 	display: flex;
 	flex-direction: row;
@@ -6,5 +8,8 @@
 	font-family: var(--font-heading);
 }
 .item {
-	font-size: 1.2rem;
+	font-size: 1rem;
+	@include tablet {
+		font-size: 1.2rem;
+	}
 }

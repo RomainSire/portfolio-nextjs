@@ -1,14 +1,15 @@
+@import "@/styles/_mixins.scss";
+
 .header {
 	padding: 1rem 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: column;
 	gap: var(--sm);
-}
 
-@media screen and (max-width: 650px) {
-	.header {
-		flex-direction: column;
+	@include tablet {
+		flex-direction: row;
 	}
 }

@@ -1,5 +1,7 @@
-@media screen and (min-width: 1250px) {
-	.navigation {
+@import "@/styles/_mixins.scss";
+
+.navigation {
+	@include desktop {
 		justify-self: start;
 	}
 }

@@ -1,3 +1,5 @@
+@import "@/styles/_mixins.scss";
+
 .listItem {
 	display: flex;
 	align-items: center;
@@ -6,11 +8,19 @@
 	position: relative;
 	--font-size: 17vw;
 	--bullet-size: 10vw;
-}
-@media screen and (min-width: 1250px) {
-	.listItem {
+
+	@include desktop {
 		--font-size: var(--4xl);
 		--bullet-size: var(--3xl);
+	}
+
+	&:hover {
+		.link {
+			transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--md)));
+		}
+		.bullet {
+			animation: bouncein 600ms cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+		}
 	}
 }
 
@@ -21,9 +31,6 @@
 	letter-spacing: -0.03em;
 	display: block;
 	transition: transform 200ms cubic-bezier(0.28, 0.84, 0.42, 1);
-}
-.listItem:hover .link {
-	transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--md)));
 }
 
 .bullet {
@@ -38,12 +45,10 @@
 	top: 50%;
 	transform: translateY(-50%) scale(0);
 	animation: bounceout 200ms;
-}
-.bullet.preload {
-	animation-duration: 0s !important;
-}
-.listItem:hover .bullet {
-	animation: bouncein 600ms cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+
+	&.preload {
+		animation-duration: 0s !important;
+	}
 }
 
 @keyframes bouncein {
