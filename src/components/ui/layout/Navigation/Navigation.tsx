@@ -3,7 +3,7 @@ import style from "./Navigation.module.scss";
 
 export default function Navigation() {
 	return (
-		<nav>
+		<nav role="navigation">
 			<ul
 				className={style.list}
 				role="list"

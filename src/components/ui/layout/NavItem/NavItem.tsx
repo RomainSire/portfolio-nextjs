@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import style from "./NavItem.module.scss";
 
 type NavItemProps = {
@@ -10,15 +12,12 @@ type NavItemProps = {
 	 * The content of the link.
 	 */
 	children: React.ReactNode;
-	/**
-	 * Whether the link is active.
-	 */
-	active?: boolean;
 };
 
-export default function NavItem({ href, children, active }: NavItemProps) {
+export default function NavItem({ href, children }: NavItemProps) {
+	const pathname = usePathname();
 	return (
-		<li className={style.listItem}>
+		<li className={`${style.listItem} ${pathname === href ? style.active : ""}`}>
 			<Link
 				className={style.link}
 				href={href}
