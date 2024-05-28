@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import style from "./LandingNavItem.module.css";
+import style from "./LandingNavItem.module.scss";
 
 type LandingNavItemProps = Readonly<{
 	/**

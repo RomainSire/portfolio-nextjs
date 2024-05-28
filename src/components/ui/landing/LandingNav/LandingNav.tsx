@@ -1,5 +1,5 @@
 import LandingNavItem from "@/components/ui/landing/LandingNavItem/LandingNavItem";
-import style from "./LandingNav.module.css";
+import style from "./LandingNav.module.scss";
 
 export default function LandingNav() {
 	return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./Hero.module.css";
+import style from "./Hero.module.scss";
 
 export default function Hero() {
 	return (
