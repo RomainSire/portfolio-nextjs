@@ -1,0 +1,43 @@
+@import "@/styles/_mixins.scss";
+
+.listItem {
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.link {
+	--link-padding: 0.5em 0.7em;
+	--skew-angle: 15deg;
+
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: var(--link-padding);
+	@include tablet {
+		font-size: 1.2rem;
+	}
+	transition:
+		translate 300ms ease-in-out,
+		transform 200ms 200ms ease-in-out;
+	transform-origin: bottom left;
+}
+
+.link::after {
+	content: attr(data-content);
+	padding: var(--link-padding);
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: skewY(calc(2 * var(--skew-angle)));
+	transform-origin: top left;
+	transition: transform 200ms 200ms ease-in-out;
+}
+
+.listItem:hover .link {
+	translate: 0 -100%;
+	transform: skewY(calc(-1 * var(--skew-angle)));
+}
+.listItem:hover .link::after {
+	transform: skewY(var(--skew-angle));
+}

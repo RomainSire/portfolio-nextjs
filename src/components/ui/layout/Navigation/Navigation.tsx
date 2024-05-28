@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavItem from "../NavItem/NavItem";
 import style from "./Navigation.module.scss";
 
 export default function Navigation() {
@@ -8,38 +8,10 @@ export default function Navigation() {
 				className={style.list}
 				role="list"
 			>
-				<li>
-					<Link
-						className={style.link}
-						href={`/about`}
-					>
-						About
-					</Link>
-				</li>
-				<li>
-					<Link
-						className={style.link}
-						href={`/work`}
-					>
-						Work
-					</Link>
-				</li>
-				<li>
-					<Link
-						className={style.link}
-						href={`/blog`}
-					>
-						Blog
-					</Link>
-				</li>
-				<li>
-					<Link
-						className={style.link}
-						href={`/contact`}
-					>
-						Contact
-					</Link>
-				</li>
+				<NavItem href="/about">About</NavItem>
+				<NavItem href="/work">Work</NavItem>
+				<NavItem href="/blog">Blog</NavItem>
+				<NavItem href="/contact">Contact</NavItem>
 			</ul>
 		</nav>
 	);

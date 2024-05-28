@@ -1,52 +1,7 @@
-@import "@/styles/_mixins.scss";
-
 .list {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: var(--xl);
+	gap: var(--lg);
 	font-family: var(--font-heading);
-}
-.link {
-	position: relative;
-	padding: 0.3em 0.5em;
-	font-size: 1rem;
-	@include tablet {
-		font-size: 1.2rem;
-	}
-
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 3px;
-		border-radius: 4px;
-		background-color: var(--color-secondary);
-		transform: scaleX(0);
-		transition: transform 300ms ease-in-out;
-	}
-	&::before {
-		// bottom line
-		bottom: 0;
-		left: 0;
-		transform-origin: right;
-	}
-	&::after {
-		// top line
-		top: 0;
-		right: 0;
-		transform-origin: left;
-	}
-
-	&:hover::before,
-	&:hover::after {
-		transform: scaleX(1);
-	}
-	&:hover::before {
-		transform-origin: left;
-	}
-	&:hover::after {
-		transform-origin: right;
-	}
 }
