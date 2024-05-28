@@ -10,7 +10,7 @@ export default function Navigation() {
 			>
 				<li>
 					<Link
-						className={style.item}
+						className={style.link}
 						href={`/about`}
 					>
 						About
@@ -18,7 +18,7 @@ export default function Navigation() {
 				</li>
 				<li>
 					<Link
-						className={style.item}
+						className={style.link}
 						href={`/work`}
 					>
 						Work
@@ -26,7 +26,7 @@ export default function Navigation() {
 				</li>
 				<li>
 					<Link
-						className={style.item}
+						className={style.link}
 						href={`/blog`}
 					>
 						Blog
@@ -34,7 +34,7 @@ export default function Navigation() {
 				</li>
 				<li>
 					<Link
-						className={style.item}
+						className={style.link}
 						href={`/contact`}
 					>
 						Contact
