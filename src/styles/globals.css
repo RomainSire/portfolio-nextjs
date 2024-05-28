@@ -2,25 +2,26 @@
 	/* Colors */
 	--color-base: hsl(39, 29%, 12%);
 	--color-neutral: hsl(39, 51%, 90%);
+	--color-neutral-secondary: hsl(0, 0%, 100%);
 	--color-primary: hsl(39, 91%, 69%);
-	--color-secondary: hsl(0, 0%, 100%);
+	--color-secondary: hsl(204, 85%, 61%);
 
 	/* Sizes (golden ratio) */
-	--size-xs: 6px;
-	--size-sm: 10px;
-	--size-md: 16px;
-	--size-lg: 26px;
-	--size-xl: 42px;
-	--size-2xl: 68px;
-	--size-3xl: 110px;
-	--size-4xl: 178px;
-	--size-5xl: 288px;
-	--size-6xl: 466px;
+	--xs: 6px;
+	--sm: 10px;
+	--md: 16px;
+	--lg: 26px;
+	--xl: 42px;
+	--2xl: 68px;
+	--3xl: 110px;
+	--4xl: 178px;
+	--5xl: 288px;
+	--6xl: 466px;
 }
 
 body {
 	font-family: var(--font-text);
-	font-size: var(--size-md);
+	font-size: var(--md);
 	background-color: var(--color-neutral);
 	color: var(--color-base);
 }
@@ -32,4 +33,8 @@ h4,
 h5,
 h6 {
 	font-family: var(--font-heading);
+}
+
+h1 {
+	font-size: var(--lg);
 }

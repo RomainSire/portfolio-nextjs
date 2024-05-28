@@ -9,8 +9,8 @@
 }
 @media screen and (min-width: 1250px) {
 	.listItem {
-		--font-size: var(--size-4xl);
-		--bullet-size: var(--size-3xl);
+		--font-size: var(--4xl);
+		--bullet-size: var(--3xl);
 	}
 }
 
@@ -23,7 +23,7 @@
 	transition: transform 200ms cubic-bezier(0.28, 0.84, 0.42, 1);
 }
 .listItem:hover .link {
-	transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--size-md)));
+	transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--md)));
 }
 
 .bullet {
@@ -32,7 +32,7 @@
 	height: var(--bullet-size);
 	border-radius: 50%;
 	background-color: var(--color-primary);
-	border: solid var(--size-xs) var(--color-base);
+	border: solid var(--xs) var(--color-base);
 	position: absolute;
 	left: 0;
 	top: 50%;
