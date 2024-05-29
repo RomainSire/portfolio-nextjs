@@ -13,7 +13,7 @@ export default function PagesLayout({ children }: Props) {
 				<Logo />
 				<Navigation />
 			</header>
-			<main>{children}</main>
+			<main className={style.main}>{children}</main>
 		</>
 	);
 }

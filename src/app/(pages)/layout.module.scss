@@ -1,7 +1,7 @@
 @import "@/styles/_mixins.scss";
 
 .header {
-	padding: 1rem 2rem;
+	padding: var(--md);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,4 +12,10 @@
 	@include tablet {
 		flex-direction: row;
 	}
+}
+
+.main {
+	max-width: var(--container-size-lg);
+	padding-inline: var(--md);
+	margin-inline: auto;
 }

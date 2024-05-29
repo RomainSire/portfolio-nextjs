@@ -1,13 +1,13 @@
 @import "reset.scss";
 
 :root {
-	/* Colors */
+	// Colors
 	--color-base: hsl(39, 29%, 12%);
 	--color-neutral: hsl(39, 100%, 97%);
 	--color-neutral-secondary: hsl(0, 0%, 100%);
 	--color-primary: hsl(39, 100%, 50%);
 
-	/* Sizes (golden ratio) */
+	// Sizes (golden ratio)
 	--xs: 6px;
 	--sm: 10px;
 	--md: 16px;
@@ -18,6 +18,13 @@
 	--4xl: 178px;
 	--5xl: 288px;
 	--6xl: 466px;
+
+	// Container sizes
+	--container-size-xs: 540px;
+	--container-size-sm: 720px;
+	--container-size-md: 960px;
+	--container-size-lg: 1140px;
+	--container-size-xl: 1320px;
 }
 
 body {
