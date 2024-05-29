@@ -4,18 +4,47 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	gap: var(--sm);
+}
+.before,
+.after {
+	color: var(--color-primary);
+}
+.after {
+	transform: translateY(var(--xs));
+}
 
-	&::before,
-	&::after {
-		color: var(--color-primary);
-	}
+.link {
+	overflow: hidden;
+}
 
-	&::before {
-		content: "<";
-	}
+.text {
+	--link-padding: 0.2em 0em;
+	--skew-angle: 15deg;
 
-	&::after {
-		content: "/>";
-		transform: translateY(var(--xs));
-	}
+	display: block;
+	padding: var(--link-padding);
+	transition:
+		translate 300ms ease-in-out,
+		transform 200ms 200ms ease-in-out;
+	transform-origin: bottom left;
+}
+.text::after {
+	content: attr(data-content);
+	padding: var(--link-padding);
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: skewY(calc(2 * var(--skew-angle)));
+	transform-origin: top left;
+	transition: transform 200ms 200ms ease-in-out;
+}
+
+.link:hover .text {
+	translate: 0 -100%;
+	transform: skewY(calc(-1 * var(--skew-angle)));
+}
+
+.link:hover .text::after {
+	transform: skewY(var(--skew-angle));
 }
