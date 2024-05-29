@@ -42,8 +42,8 @@
 	transform: skewY(var(--skew-angle));
 }
 
-.listItem.active {
-	color: var(--color-secondary);
+.listItem.active .link {
+	color: var(--color-primary);
 }
 
 .listItem:has(:focus-visible) {
