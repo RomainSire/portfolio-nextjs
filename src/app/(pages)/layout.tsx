@@ -1,7 +1,7 @@
-import ConfidentialityPolicy from "@/components/ui/layout/ConfidentialityPolicy/ConfidentialityPolicy";
 import Copyright from "@/components/ui/layout/Copyright/Copyright";
 import Logo from "@/components/ui/layout/Logo/Logo";
 import Navigation from "@/components/ui/layout/Navigation/Navigation";
+import PrivacyPolicy from "@/components/ui/layout/PrivacyPolicy/PrivacyPolicy";
 import style from "./layout.module.scss";
 
 type Props = Readonly<{
@@ -19,7 +19,7 @@ export default function PagesLayout({ children }: Props) {
 			<footer className={style.footer}>
 				<Copyright />
 				&#8226;
-				<ConfidentialityPolicy />
+				<PrivacyPolicy />
 			</footer>
 		</div>
 	);
