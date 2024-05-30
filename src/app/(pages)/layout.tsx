@@ -10,7 +10,7 @@ type Props = Readonly<{
 
 export default function PagesLayout({ children }: Props) {
 	return (
-		<>
+		<div className={style.wrapper}>
 			<header className={style.header}>
 				<Logo />
 				<Navigation />
@@ -21,6 +21,6 @@ export default function PagesLayout({ children }: Props) {
 				&#8226;
 				<ConfidentialityPolicy />
 			</footer>
-		</>
+		</div>
 	);
 }

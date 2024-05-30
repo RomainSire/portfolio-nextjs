@@ -1,4 +1,9 @@
 @import "@/styles/_mixins.scss";
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
 
 .header {
 	padding: var(--md);
@@ -15,12 +20,14 @@
 }
 
 .main {
+	width: 100%;
 	max-width: var(--container-size-lg);
 	padding-inline: var(--md);
 	margin-inline: auto;
 }
 
 .footer {
+	padding: var(--sm) 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
