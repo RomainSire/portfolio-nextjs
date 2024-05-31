@@ -17,6 +17,7 @@
 	&:hover {
 		.link {
 			transform: skewX(-15deg) translateX(calc(var(--bullet-size) + var(--md)));
+			font-variation-settings: "wght" 500;
 		}
 		.bullet {
 			animation: bouncein 600ms cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
@@ -30,7 +31,10 @@
 	line-height: 1;
 	letter-spacing: -0.03em;
 	display: block;
-	transition: transform 200ms cubic-bezier(0.28, 0.84, 0.42, 1);
+	font-variation-settings: "wght" 800;
+	transition:
+		transform 200ms cubic-bezier(0.28, 0.84, 0.42, 1),
+		font-variation-settings 200ms ease-in-out;
 }
 
 .bullet {
