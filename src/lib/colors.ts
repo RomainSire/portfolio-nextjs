@@ -10,6 +10,21 @@ function hexToRgb(hex: string): [number, number, number] {
 }
 
 /**
+ * Convert RGB color to hex
+ * @param r - Red
+ * @param g - Green
+ * @param b - Blue
+ * @returns Hex color
+ */
+function rgbToHex(r: number, g: number, b: number): string {
+	r = Math.max(0, Math.min(255, r));
+	g = Math.max(0, Math.min(255, g));
+	b = Math.max(0, Math.min(255, b));
+
+	return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+}
+
+/**
  * Calculate luminance of a color
  * @param rgbColor - RGB color in an array
  * @returns Luminance
@@ -38,4 +53,24 @@ export function contrast(hexcolor1: string, hexcolor2: string): number {
 	const darkest = Math.min(lum1, lum2);
 
 	return (brightest + 0.05) / (darkest + 0.05);
+}
+
+/**
+ * Lighten a color
+ * @param hex - Hex color
+ * @param percent - Percentage to lighten
+ * @returns Lightened color
+ */
+export function lightenColor(hex: string, percent: number): string {
+	let [r, g, b] = hexToRgb(hex);
+
+	r = Math.round(r * (1 + percent / 100));
+	g = Math.round(g * (1 + percent / 100));
+	b = Math.round(b * (1 + percent / 100));
+
+	r = Math.min(255, r);
+	g = Math.min(255, g);
+	b = Math.min(255, b);
+
+	return rgbToHex(r, g, b);
 }

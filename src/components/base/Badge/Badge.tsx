@@ -1,5 +1,5 @@
 "use client";
-import { contrast } from "@/lib/colors";
+import { contrast, lightenColor } from "@/lib/colors";
 import style from "./Badge.module.scss";
 
 type BadgeProps = {
@@ -11,6 +11,11 @@ type BadgeProps = {
 	 * Background color of the badge
 	 */
 	bgColor: string;
+	/**
+	 * Lighten the background color
+	 * @default true
+	 */
+	lightenBgColor?: boolean;
 	/**
 	 * Icon to be displayed inside badge
 	 */
@@ -24,19 +29,22 @@ type BadgeProps = {
 /**
  * Badge component
  */
-export default function Badge({ children, bgColor, icon, className }: BadgeProps) {
-	// Calculate whick text color to use based on the background color
+export default function Badge({ children, bgColor, lightenBgColor = true, icon, className }: BadgeProps) {
+	// Lighten the given background color
+	const lightBgColor = lightenBgColor ? lightenColor(bgColor, 60) : bgColor;
+
+	// Determinates the text color (light or dark) based on the background color
 	const baseColor = "#272116";
 	const neutralColor = "#fffaf0";
-	const contrastToDark = contrast(baseColor, bgColor);
-	const contrastToLight = contrast(neutralColor, bgColor);
+	const contrastToDark = contrast(baseColor, lightBgColor);
+	const contrastToLight = contrast(neutralColor, lightBgColor);
 	const textColorClass = contrastToLight > contrastToDark ? style.txtLight : "";
 
 	return (
 		<span
 			className={`${style.badge} ${textColorClass} ${className}`}
 			style={{
-				backgroundColor: bgColor,
+				backgroundColor: lightBgColor,
 			}}
 		>
 			{icon}
