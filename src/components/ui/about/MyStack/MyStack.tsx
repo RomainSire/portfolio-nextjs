@@ -43,35 +43,35 @@ export default function MyStack() {
 				<div className={style.badgeWrapper}>
 					{/* TYPESCRIPT */}
 					<Badge
-						bgColor={SiTypescriptHex}
+						color={SiTypescriptHex}
 						icon={<SiTypescript />}
 					>
 						Typescript
 					</Badge>
 					{/* REACT */}
 					<Badge
-						bgColor={SiReactHex}
+						color={SiReactHex}
 						icon={<SiReact />}
 					>
 						React
 					</Badge>
 					{/* NEXT JS */}
 					<Badge
-						bgColor={SiNextdotjsHex}
+						color={SiNextdotjsHex}
 						icon={<SiNextdotjs />}
 					>
 						Next.Js
 					</Badge>
 					{/* ASTRO */}
 					<Badge
-						bgColor={SiAstroHex}
+						color={SiAstroHex}
 						icon={<SiAstro />}
 					>
 						Astro
 					</Badge>
 					{/* SASS */}
 					<Badge
-						bgColor={SiSassHex}
+						color={SiSassHex}
 						icon={<SiSass />}
 					>
 						SASS
@@ -83,42 +83,42 @@ export default function MyStack() {
 				<div className={style.badgeWrapper}>
 					{/* LINUX */}
 					<Badge
-						bgColor={SiLinuxHex}
+						color={SiLinuxHex}
 						icon={<SiLinux />}
 					>
 						Linux
 					</Badge>
 					{/* VSCODE */}
 					<Badge
-						bgColor={SiVisualstudiocodeHex}
+						color={SiVisualstudiocodeHex}
 						icon={<SiVisualstudiocode />}
 					>
 						VSCode
 					</Badge>
 					{/* GIT */}
 					<Badge
-						bgColor={SiGitHex}
+						color={SiGitHex}
 						icon={<SiGit />}
 					>
 						Git
 					</Badge>
 					{/* GITHUB */}
 					<Badge
-						bgColor={SiGithubHex}
+						color={SiGithubHex}
 						icon={<SiGithub />}
 					>
 						GitHub
 					</Badge>
 					{/* DOCKER */}
 					<Badge
-						bgColor={SiDockerHex}
+						color={SiDockerHex}
 						icon={<SiDocker />}
 					>
 						Docker
 					</Badge>
 					{/* FIGMA */}
 					<Badge
-						bgColor={SiFigmaHex}
+						color={SiFigmaHex}
 						icon={<SiFigma />}
 					>
 						Figma
@@ -130,35 +130,35 @@ export default function MyStack() {
 				<div className={style.badgeWrapper}>
 					{/* Mongo DB */}
 					<Badge
-						bgColor={SiMongodbHex}
+						color={SiMongodbHex}
 						icon={<SiMongodb />}
 					>
 						MongoDB
 					</Badge>
 					{/* MySQL */}
 					<Badge
-						bgColor={SiMysqlHex}
+						color={SiMysqlHex}
 						icon={<SiMysql />}
 					>
 						MySQL
 					</Badge>
 					{/* NodeJS */}
 					<Badge
-						bgColor={SiNodedotjsHex}
+						color={SiNodedotjsHex}
 						icon={<SiNodedotjs />}
 					>
 						Node.Js
 					</Badge>
 					{/* SVELTE */}
 					<Badge
-						bgColor={SiSvelteHex}
+						color={SiSvelteHex}
 						icon={<SiSvelte />}
 					>
 						Svelte
 					</Badge>
 					{/* ANGULAR */}
 					<Badge
-						bgColor={SiAngularHex}
+						color={SiAngularHex}
 						icon={<SiAngular />}
 					>
 						Angular

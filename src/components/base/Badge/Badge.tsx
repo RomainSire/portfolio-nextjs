@@ -10,12 +10,12 @@ type BadgeProps = {
 	/**
 	 * Background color of the badge
 	 */
-	bgColor: string;
+	color: string;
 	/**
 	 * Lighten the background color
 	 * @default true
 	 */
-	lightenBgColor?: boolean;
+	lighten?: boolean;
 	/**
 	 * Icon to be displayed inside badge
 	 */
@@ -29,9 +29,9 @@ type BadgeProps = {
 /**
  * Badge component
  */
-export default function Badge({ children, bgColor, lightenBgColor = true, icon, className }: BadgeProps) {
+export default function Badge({ children, color, lighten = true, icon, className }: BadgeProps) {
 	// Lighten the given background color
-	const lightBgColor = lightenBgColor ? lightenColor(bgColor, 60) : bgColor;
+	const lightBgColor = lighten ? lightenColor(color, 60) : color;
 
 	// Determinates the text color (light or dark) based on the background color
 	const baseColor = "#272116";
