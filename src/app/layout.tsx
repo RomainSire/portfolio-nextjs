@@ -1,4 +1,4 @@
-import { kreonFont, ubuntuFont } from "@/lib/fonts";
+import { rokkittFont, ubuntuFont } from "@/lib/fonts";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
 	return (
 		<html lang="en">
-			<body className={`${kreonFont.variable} ${ubuntuFont.variable}`}>{children}</body>
+			<body className={`${ubuntuFont.variable} ${rokkittFont.variable}`}>{children}</body>
 		</html>
 	);
 }
