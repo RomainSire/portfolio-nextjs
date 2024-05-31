@@ -1,0 +1,12 @@
+.wrapper {
+	display: grid;
+	gap: var(--xl);
+}
+.title {
+	margin-bottom: var(--xl);
+}
+.badgeWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--sm);
+}

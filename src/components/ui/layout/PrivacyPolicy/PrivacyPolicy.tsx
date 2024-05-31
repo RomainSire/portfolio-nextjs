@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
 			target="_blank"
 			className={style.link}
 		>
-			Privacy Policy
+			Privacy Policy (Fr)
 		</Link>
 	);
 }

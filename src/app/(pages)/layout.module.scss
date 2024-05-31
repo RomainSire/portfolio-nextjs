@@ -23,7 +23,14 @@
 	width: 100%;
 	max-width: var(--container-size-lg);
 	padding-inline: var(--md);
+	padding-block: var(--xl);
 	margin-inline: auto;
+	@include tablet {
+		padding-block: var(--2xl);
+	}
+	@include desktop {
+		padding-block: var(--3xl);
+	}
 }
 
 .footer {

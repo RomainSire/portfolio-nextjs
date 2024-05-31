@@ -1,0 +1,6 @@
+.title {
+	margin-bottom: var(--xl);
+}
+.section p:not(:last-child) {
+	margin-bottom: var(--lg);
+}

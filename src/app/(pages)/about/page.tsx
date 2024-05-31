@@ -1,3 +1,12 @@
+import MyStack from "@/components/ui/about/MyStack/MyStack";
+import WhoAmI from "@/components/ui/about/WhoAmI/WhoAmI";
+import style from "./page.module.scss";
+
 export default function AboutPage() {
-	return <h1>About</h1>;
+	return (
+		<div className={style.wrapper}>
+			<WhoAmI />
+			<MyStack />
+		</div>
+	);
 }
