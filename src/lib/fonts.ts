@@ -8,6 +8,6 @@ export const ubuntuFont = Ubuntu({
 
 export const rokkittFont = Rokkitt({
 	subsets: ["latin"],
-	weight: "800",
+	weight: ["500", "800"],
 	variable: "--font-heading",
 });
