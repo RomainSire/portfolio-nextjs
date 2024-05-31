@@ -1,3 +1,5 @@
+import btnStyle from "@/styles/button.module.scss";
+import Link from "next/link";
 import style from "./WhoAmI.module.scss";
 
 export default function WhoAmI() {
@@ -24,6 +26,12 @@ export default function WhoAmI() {
 				particularly drawn to projects of around 6 months with startups or small teams. However, I am always open to new
 				challenges, including opportunities in larger organizations.
 			</p>
+			<Link
+				className={btnStyle.button}
+				href="/contact"
+			>
+				Let&apos;s discuss your project!
+			</Link>
 		</section>
 	);
 }
