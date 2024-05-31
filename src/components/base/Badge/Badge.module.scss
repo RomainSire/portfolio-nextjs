@@ -1,0 +1,22 @@
+.badge {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--sm);
+	font-weight: 700;
+	line-height: 1;
+	font-size: 0.93rem;
+	padding: var(--sm) var(--lg);
+	border-radius: var(--lg);
+	border: 2px solid var(--color-base);
+}
+
+.badge svg {
+	height: 1.3em;
+	width: 1.3em;
+}
+
+.badge.txtLight {
+	color: var(--color-neutral);
+}
