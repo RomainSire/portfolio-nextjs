@@ -1,0 +1,24 @@
+.button {
+	--offset: 4px;
+	--offset-hover: 1px;
+
+	display: inline-block;
+	background-color: var(--color-primary);
+	padding: var(--md) var(--xl);
+	font-weight: 700;
+	border: 2px solid var(--color-base);
+	cursor: pointer;
+	box-shadow: var(--offset) var(--offset) 0 0 var(--color-base);
+	line-height: 1;
+	transition: all 100ms ease-in-out;
+}
+
+.button:hover {
+	box-shadow: var(--offset-hover) var(--offset-hover) 0 0 var(--color-base);
+	transform: translate(calc(var(--offset) - var(--offset-hover)), calc(var(--offset) - var(--offset-hover)));
+}
+
+.button:focus-visible {
+	outline: 2px solid var(--color-base);
+	outline-offset: 7px;
+}
