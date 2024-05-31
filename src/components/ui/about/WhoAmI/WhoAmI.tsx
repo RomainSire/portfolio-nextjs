@@ -1,4 +1,5 @@
 import btnStyle from "@/styles/button.module.scss";
+import { Sparkle } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import style from "./WhoAmI.module.scss";
 
@@ -30,7 +31,9 @@ export default function WhoAmI() {
 				className={btnStyle.button}
 				href="/contact"
 			>
-				Let&apos;s discuss your project!
+				<Sparkle size={24} />
+				<span>Let&apos;s discuss your project!</span>
+				<Sparkle size={24} />
 			</Link>
 		</section>
 	);
