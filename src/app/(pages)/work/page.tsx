@@ -1,5 +1,5 @@
 import { getWorkItems } from "@/actions/workItemsActions";
-import WorkItem from "@/components/ui/WorkItem/WorkItem";
+import WorkItem from "@/components/ui/work/WorkItem/WorkItem";
 import style from "./page.module.scss";
 
 export default async function WorkPage() {
