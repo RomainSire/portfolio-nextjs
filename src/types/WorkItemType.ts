@@ -17,6 +17,10 @@ export type WorkItemType = {
 	 */
 	stack: StackItemType[];
 	/**
+	 * Image path of the work item
+	 */
+	image: string;
+	/**
 	 * GitHub URL of the work item
 	 */
 	github?: string;

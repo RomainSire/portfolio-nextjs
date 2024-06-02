@@ -24,3 +24,12 @@
 	outline: 2px solid var(--color-base);
 	outline-offset: 7px;
 }
+
+.button.secondary {
+	background-color: var(--color-neutral-secondary);
+}
+
+.button.square {
+	padding: var(--md);
+	aspect-ratio: 1/1;
+}
