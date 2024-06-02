@@ -20,8 +20,14 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 				},
 			],
 			image: "/work/notrelec.png",
-			github: "https://github.com/blabla",
-			demo: "https://demo.com",
+			github: {
+				url: "https://github.com/blabla",
+				tooltip: "Check the code on Github",
+			},
+			demo: {
+				url: "https://demo.com",
+				tooltip: "Visit the app",
+			},
 		},
 		{
 			title: "Work Item 2",
@@ -35,7 +41,14 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 				},
 			],
 			image: "/work/notrelec.png",
-			github: "https://github.com/blabla",
+			github: {
+				url: "https://github.com/blabla",
+				tooltip: "Check it on Github",
+			},
+			demo: {
+				url: "",
+				tooltip: "there is no demo yet",
+			},
 		},
 		{
 			title: "Work Item 3",
@@ -49,7 +62,14 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 				},
 			],
 			image: "/work/notrelec.png",
-			demo: "https://demo.com",
+			github: {
+				url: "",
+				tooltip: "The repository is private",
+			},
+			demo: {
+				url: "https://demo.com",
+				tooltip: "Go to the website",
+			},
 		},
 		{
 			title: "Work Item 4",
@@ -63,6 +83,14 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 				},
 			],
 			image: "/work/notrelec.png",
+			github: {
+				url: "",
+				tooltip: "The repository is private",
+			},
+			demo: {
+				url: "",
+				tooltip: "There is no demo yet",
+			},
 		},
 	];
 }

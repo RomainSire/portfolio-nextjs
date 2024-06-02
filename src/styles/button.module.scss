@@ -33,3 +33,13 @@
 	padding: var(--md);
 	aspect-ratio: 1/1;
 }
+
+.button[disabled] {
+	background-color: grey;
+	box-shadow: var(--offset-hover) var(--offset-hover) 0 0 var(--color-base);
+	transform: translate(calc(var(--offset) - var(--offset-hover)), calc(var(--offset) - var(--offset-hover)));
+	color: var(--color-diasbled-text);
+	background-color: var(--color-diasbled-bg);
+	border-color: var(--color-diasbled-text);
+	cursor: no-drop;
+}

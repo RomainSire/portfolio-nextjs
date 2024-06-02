@@ -1,9 +1,8 @@
 import Badge from "@/components/base/Badge/Badge";
-import btn from "@/styles/button.module.scss";
 import { type WorkItemType } from "@/types/WorkItemType";
-import { GithubLogo, ShareFat } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import Link from "next/link";
+import "react-tooltip/dist/react-tooltip.css";
+import WorkButton from "../WorkButton/WorkButton";
 import style from "./WorkItem.module.scss";
 
 type WorkItemProps = {
@@ -41,24 +40,14 @@ export default function WorkItem({ workItem, reverse }: WorkItemProps) {
 			</div>
 			<div className={style.description}>{workItem.description}</div>
 			<div className={style.cta}>
-				{workItem.github ? (
-					<Link
-						className={`${btn.button} ${btn.secondary} ${btn.square}`}
-						href={workItem.github}
-						target="_blank"
-					>
-						<GithubLogo size={32} />
-					</Link>
-				) : null}
-				{workItem.demo ? (
-					<Link
-						className={`${btn.button} ${btn.square}`}
-						href={workItem.demo}
-						target="_blank"
-					>
-						<ShareFat size={32} />
-					</Link>
-				) : null}
+				<WorkButton
+					workLink={workItem.github}
+					type="github"
+				/>
+				<WorkButton
+					workLink={workItem.demo}
+					type="demo"
+				/>
 			</div>
 		</article>
 	);

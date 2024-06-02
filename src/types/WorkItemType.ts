@@ -23,9 +23,23 @@ export type WorkItemType = {
 	/**
 	 * GitHub URL of the work item
 	 */
-	github?: string;
+	github: WorkLinkType;
 	/**
 	 * Demo URL of the work item
 	 */
-	demo?: string;
+	demo: WorkLinkType;
+};
+
+/**
+ * Type definition for work link
+ */
+export type WorkLinkType = {
+	/**
+	 * URL of the link
+	 */
+	url: string;
+	/**
+	 * Tooltip of the link
+	 */
+	tooltip: string;
 };
