@@ -10,7 +10,8 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 	return [
 		{
 			title: "Work Item 1",
-			description: "This is the first work item.",
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt dolorem dignissimos doloribus repellat explicabo, animi maiores quos aspernatur quia sed molestias qui ipsam! Quia atque odio expedita repellat porro.",
 			stack: [
 				{
 					name: "React",
@@ -18,12 +19,14 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiReact />,
 				},
 			],
+			image: "/work/notrelec.png",
 			github: "https://github.com/blabla",
 			demo: "https://demo.com",
 		},
 		{
 			title: "Work Item 2",
-			description: "This is the second work item.",
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt dolorem dignissimos doloribus repellat explicabo, animi maiores quos aspernatur quia sed molestias qui ipsam! Quia atque odio expedita repellat porro.",
 			stack: [
 				{
 					name: "React",
@@ -31,11 +34,13 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiReact />,
 				},
 			],
+			image: "/work/notrelec.png",
 			github: "https://github.com/blabla",
 		},
 		{
 			title: "Work Item 3",
-			description: "This is the third work item.",
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt dolorem dignissimos doloribus repellat explicabo, animi maiores quos aspernatur quia sed molestias qui ipsam! Quia atque odio expedita repellat porro.",
 			stack: [
 				{
 					name: "React",
@@ -43,11 +48,13 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiReact />,
 				},
 			],
+			image: "/work/notrelec.png",
 			demo: "https://demo.com",
 		},
 		{
 			title: "Work Item 4",
-			description: "This is the fourth work item.",
+			description:
+				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt dolorem dignissimos doloribus repellat explicabo, animi maiores quos aspernatur quia sed molestias qui ipsam! Quia atque odio expedita repellat porro.",
 			stack: [
 				{
 					name: "React",
@@ -55,6 +62,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiReact />,
 				},
 			],
+			image: "/work/notrelec.png",
 		},
 	];
 }
