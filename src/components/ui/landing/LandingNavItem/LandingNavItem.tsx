@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import style from "./LandingNavItem.module.scss";
 
@@ -22,13 +23,10 @@ export default function LandingNavItem({ href, children }: LandingNavItemProps) 
 
 	return (
 		<li className={style.listItem}>
-			<span className={`${style.bullet} ${isInitialRender ? style.preload : ""}`}></span>
-			<a
-				href={href}
-				className={style.link}
-			>
-				{children}
-			</a>
+			<Link href={href}>
+				<span className={`${style.bullet} ${isInitialRender ? style.preload : ""}`}></span>
+				<span className={style.text}>{children}</span>
+			</Link>
 		</li>
 	);
 }
