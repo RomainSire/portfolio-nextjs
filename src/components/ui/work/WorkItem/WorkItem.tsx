@@ -20,13 +20,6 @@ export default function WorkItem({ workItem, reverse }: WorkItemProps) {
 	return (
 		<article className={`${style.wrapper} ${reverse ? style.reverse : ""}`}>
 			<h2 className={style.title}>{workItem.title}</h2>
-			<Image
-				className={style.image}
-				src={workItem.image}
-				alt={`Screenshot of the project: ${workItem.title}`}
-				height={300}
-				width={600}
-			/>
 			<div className={style.badges}>
 				{workItem.stack.map((stackItem) => (
 					<Badge
@@ -38,6 +31,13 @@ export default function WorkItem({ workItem, reverse }: WorkItemProps) {
 					</Badge>
 				))}
 			</div>
+			<Image
+				className={style.image}
+				src={workItem.image}
+				alt={`Screenshot of the project: ${workItem.title}`}
+				height={300}
+				width={600}
+			/>
 			<div className={style.description}>{workItem.description}</div>
 			<div className={style.cta}>
 				<WorkButton

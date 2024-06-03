@@ -1,4 +1,13 @@
+@import "@/styles/_mixins.scss";
+
 .wrapper {
 	display: grid;
-	gap: var(--4xl);
+	gap: var(--2xl);
+
+	@include tablet {
+		gap: var(--3xl);
+	}
+	@include desktop {
+		gap: var(--4xl);
+	}
 }
