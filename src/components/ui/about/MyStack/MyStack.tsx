@@ -1,7 +1,6 @@
 import Badge from "@/components/base/Badge/Badge";
 import {
 	SiAngular,
-	SiAngularHex,
 	SiAstro,
 	SiAstroHex,
 	SiDocker,
@@ -158,7 +157,7 @@ export default function MyStack() {
 					</Badge>
 					{/* ANGULAR */}
 					<Badge
-						color={SiAngularHex}
+						color="#a4374f"
 						icon={<SiAngular />}
 					>
 						Angular

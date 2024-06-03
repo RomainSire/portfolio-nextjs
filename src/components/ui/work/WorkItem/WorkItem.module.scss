@@ -11,13 +11,15 @@
 .badges {
 	grid-column: 1 / 7;
 	grid-row: 2/3;
+	display: flex;
+	gap: var(--sm);
 }
 .description {
 	grid-column: 1 / 8;
 	grid-row: 3/4;
 	background-color: var(--color-neutral-secondary);
 	border: 3px solid var(--color-base);
-	padding: var(--sm) var(--md);
+	padding: var(--md) var(--lg);
 }
 .cta {
 	--btn-shadow-size: 4px;

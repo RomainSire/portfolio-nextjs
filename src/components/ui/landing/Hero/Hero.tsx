@@ -6,8 +6,8 @@ export default function Hero() {
 		<section className={style.hero}>
 			<div className={style.imgWrapper}>
 				<Image
-					src="/bison.jpeg"
-					alt="a colorfoul and stylized painting of a bison's head with sunglasses"
+					src="/profile.jpeg"
+					alt="My own headshot smiling in front of a park background"
 					width={350}
 					height={350}
 					className={style.img}
