@@ -37,18 +37,17 @@ export default function WorkButton({ workLink, type }: WorkButtonProps) {
 	}
 
 	return (
-		<Link
-			href={workLink.url}
-			target="_blank"
-		>
-			<button
+		<>
+			<Link
 				className={`${btn.button} ${type === "github" ? btn.secondary : ""} ${btn.square}`}
+				href={workLink.url}
+				target="_blank"
 				data-tooltip-id={uniqueId}
 				data-tooltip-content={workLink.tooltip}
 			>
 				{icon}
-			</button>
+			</Link>
 			<Tooltip id={uniqueId} />
-		</Link>
+		</>
 	);
 }
