@@ -1,0 +1,24 @@
+.form {
+	display: grid;
+	gap: var(--lg);
+}
+.label {
+	display: block;
+	width: 100%;
+	margin-bottom: var(--sm);
+}
+.input {
+	display: block;
+	width: 100%;
+	padding: var(--md) var(--lg);
+	border: 2px solid var(--color-base);
+}
+.input:focus {
+	outline: 3px solid var(--color-primary);
+}
+.input:user-invalid {
+	outline: 3px solid var(--color-error);
+}
+textarea.input {
+	resize: vertical;
+}
