@@ -10,7 +10,7 @@ export default function Navigation() {
 			>
 				<NavItem href="/about">About</NavItem>
 				<NavItem href="/work">Work</NavItem>
-				<NavItem href="/blog">Blog</NavItem>
+				{/* <NavItem href="/blog">Blog</NavItem> */}
 				<NavItem href="/contact">Contact</NavItem>
 			</ul>
 		</nav>

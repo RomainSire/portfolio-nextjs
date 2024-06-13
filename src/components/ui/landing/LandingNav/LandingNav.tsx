@@ -7,7 +7,7 @@ export default function LandingNav() {
 			<ul role="list">
 				<LandingNavItem href="/about">About</LandingNavItem>
 				<LandingNavItem href="/work">Work</LandingNavItem>
-				<LandingNavItem href="/blog">Blog</LandingNavItem>
+				{/* <LandingNavItem href="/blog">Blog</LandingNavItem> */}
 				<LandingNavItem href="/contact">Contact</LandingNavItem>
 			</ul>
 		</nav>
