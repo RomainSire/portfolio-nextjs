@@ -38,5 +38,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: var(--md);
+	flex-wrap: wrap;
+	gap: var(--lg);
 }
