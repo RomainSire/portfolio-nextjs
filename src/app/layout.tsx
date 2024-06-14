@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 		template: "%s | Romain Siré - Frontend Developer",
 		default: "Romain Siré - Frontend Developer",
 	},
-	description: "I am a freelance front-end developer for hire, and I also code fun apps on my free time.",
+	description:
+		"Welcome to the portfolio of Romain Siré, a freelance frontend developer specializing in Typescript, React, Next.Js, Astro, and SASS. Discover his professional journey, explore his work, read insightful blog posts, and get in touch for collaborations or discussions.",
 	metadataBase: new URL("https://romainsire.com"),
 };
 

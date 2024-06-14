@@ -5,6 +5,8 @@ import style from "./page.module.scss";
 
 export const metadata: Metadata = {
 	title: "Contact",
+	description:
+		"Get in touch with Romain Sire, a freelance frontend developer. Whether you have a project in mind or just want to say hi, Romain is always open to discussions. Connect on social media or send a direct message through the contact form.",
 };
 
 export default function ContactPage() {
