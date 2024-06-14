@@ -1,6 +1,11 @@
 import ContactForm from "@/components/ui/contact/ContactForm/ContactForm";
 import SocialBtns from "@/components/ui/contact/SocialBtns/SocialBtns";
+import { Metadata } from "next";
 import style from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "Contact",
+};
 
 export default function ContactPage() {
 	return (

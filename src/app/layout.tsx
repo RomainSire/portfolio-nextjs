@@ -13,8 +13,12 @@ type Props = Readonly<{
  * Root layout metadata
  */
 export const metadata: Metadata = {
-	title: "Romain Siré - Frontend Developer",
+	title: {
+		template: "%s | Romain Siré - Frontend Developer",
+		default: "Romain Siré - Frontend Developer",
+	},
 	description: "I am a freelance front-end developer for hire, and I also code fun apps on my free time.",
+	metadataBase: new URL("https://romainsire.com"),
 };
 
 /**
