@@ -6,7 +6,9 @@
 	place-items: center;
 }
 .img {
-	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	border-radius: 50%;
+	border: var(--sm) solid var(--color-primary);
+	outline: var(--xs) solid var(--color-base);
 }
 .title {
 	font-size: var(--xl);
