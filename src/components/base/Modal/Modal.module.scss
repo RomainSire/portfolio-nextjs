@@ -1,0 +1,42 @@
+.dialog {
+	transform: translate(0, 0);
+	padding: var(--xl);
+	max-width: 90%;
+	background-color: var(--color-neutral);
+	border: 3px solid var(--color-base);
+	outline: none;
+	&::backdrop {
+		background: var(--color-base);
+		opacity: 40%;
+	}
+}
+
+// ANIMATION (progressive enhancement = only available in recent browsers)
+@media screen and (prefers-reduced-motion: no-preference) {
+	.dialog {
+		--animation-time: 0.1s;
+		opacity: 0;
+		transform: translate(0, 50%);
+		transition: all var(--animation-time) allow-discrete ease-out;
+		&::backdrop {
+			opacity: 0%;
+			transition: all var(--animation-time) allow-discrete ease-out;
+		}
+	}
+	.dialog[open] {
+		opacity: 1;
+		transform: translate(0, 0);
+		&::backdrop {
+			opacity: 40%;
+		}
+	}
+	@starting-style {
+		.dialog[open] {
+			opacity: 0;
+			transform: translate(0, 50%);
+			&::backdrop {
+				opacity: 0%;
+			}
+		}
+	}
+}

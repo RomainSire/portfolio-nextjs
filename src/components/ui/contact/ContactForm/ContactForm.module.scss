@@ -22,3 +22,22 @@
 textarea.input {
 	resize: vertical;
 }
+
+.modal {
+	display: grid;
+	gap: var(--lg);
+}
+.success {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--sm);
+	color: var(--color-success);
+}
+.fail {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--sm);
+	color: var(--color-error);
+}
