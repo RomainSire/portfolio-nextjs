@@ -32,7 +32,7 @@ jobs:
           MAILGUN_SENDER_DOMAIN: ${{ secrets.MAILGUN_SENDER_DOMAIN }}
           MAILGUN_SENDER_ADDRESS: ${{ secrets.MAILGUN_SENDER_ADDRESS }}
         with:
-          name: RomainSire/portfolio-nextjs/portfolio
+          name: romainsire/portfolio-nextjs/portfolio
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
@@ -53,7 +53,7 @@ jobs:
           script: |
             CONTAINER_NAME=portfolio
             cat ~/portfolio/pat | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
-            docker pull ghcr.io/RomainSire/portfolio-nextjs/portfolio:latest
+            docker pull ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
             docker stop $CONTAINER_NAME
             docker system prune -f
-            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextjs/portfolio:latest
+            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
