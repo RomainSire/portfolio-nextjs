@@ -53,7 +53,7 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker pull ghcr.io/my_github_username/my_repository_name/my_image_name:latest
+            docker pull ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
             docker stop containername
             docker system prune -f
-            docker run --name containername -dit -p 3000:3000 --restart unless-stopped ghcr.io/my_github_username/my_repository_name/my_image_name:latest
+            docker run --name containername -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
