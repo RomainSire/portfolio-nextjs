@@ -32,7 +32,7 @@ jobs:
           MAILGUN_SENDER_DOMAIN: ${{ secrets.MAILGUN_SENDER_DOMAIN }}
           MAILGUN_SENDER_ADDRESS: ${{ secrets.MAILGUN_SENDER_ADDRESS }}
         with:
-          name: RomainSire/portfolio-nextJs/portfolio
+          name: RomainSire/portfolio-nextjs/portfolio
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
@@ -44,17 +44,16 @@ jobs:
         uses: appleboy/ssh-action@master
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          envs: GITHUB_USERNAME, GITHUB_TOKEN
+          envs: GITHUB_USERNAME
           script: |
             CONTAINER_NAME=portfolio
-            docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker pull ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
+            cat ~/portfolio/pat | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
+            docker pull ghcr.io/RomainSire/portfolio-nextjs/portfolio:latest
             docker stop $CONTAINER_NAME
             docker system prune -f
-            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
+            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextjs/portfolio:latest
