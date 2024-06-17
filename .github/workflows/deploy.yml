@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build and Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         env:
@@ -35,7 +35,7 @@ jobs:
           name: RomainSire/portfolio-nextJs/portfolio
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           dockerfile: Dockerfile
           buildargs: MAILGUN_API_KEY,MAILGUN_URL,MAILGUN_SENDER_DOMAIN,MAILGUN_SENDER_ADDRESS
           tags: latest
@@ -44,7 +44,7 @@ jobs:
         uses: appleboy/ssh-action@master
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           port: ${{ secrets.DEPLOY_PORT }}
@@ -52,8 +52,9 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
+            CONTAINER_NAME=portfolio
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
             docker pull ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
-            docker stop containername
+            docker stop $CONTAINER_NAME
             docker system prune -f
-            docker run --name containername -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
+            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/RomainSire/portfolio-nextJs/portfolio:latest
