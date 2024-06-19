@@ -8,18 +8,21 @@ export default function SocialBtns() {
 		<div className={style.wrapper}>
 			<Link
 				className={`${btnStyle.button} ${btnStyle.secondary}`}
+				target="_blank"
 				href="https://github.com/RomainSire"
 			>
 				<SiGithub /> Github
 			</Link>
 			<Link
 				className={`${btnStyle.button} ${btnStyle.secondary}`}
+				target="_blank"
 				href="https://www.linkedin.com/in/romainsire"
 			>
 				<SiLinkedin /> Linkedin
 			</Link>
 			<Link
 				className={`${btnStyle.button} ${btnStyle.secondary}`}
+				target="_blank"
 				href="https://twitter.com/freebison"
 			>
 				<SiTwitter /> Twitter
