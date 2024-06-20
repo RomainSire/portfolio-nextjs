@@ -49,6 +49,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           envs: GITHUB_USERNAME, MAILGUN_API_KEY, MAILGUN_URL, MAILGUN_SENDER_DOMAIN, MAILGUN_SENDER_ADDRESS
           script: |
+            source ~/portfolio/.env
             CONTAINER_NAME=portfolio
             cat ~/portfolio/pat | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
             docker pull ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
@@ -58,8 +59,8 @@ jobs:
               --name $CONTAINER_NAME \
               -dit \
               -p 3000:3000 \
-              --env MAILGUN_API_KEY=$MAILGUN_API_KEY \
-              --env MAILGUN_URL=$MAILGUN_URL \
-              --env MAILGUN_SENDER_DOMAIN=$MAILGUN_SENDER_DOMAIN \
-              --env MAILGUN_SENDER_ADDRESS=$MAILGUN_SENDER_ADDRESS \
+              --e MAILGUN_API_KEY \
+              --e MAILGUN_URL \
+              --e MAILGUN_SENDER_DOMAIN \
+              --e MAILGUN_SENDER_ADDRESS \
               --restart unless-stopped ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
