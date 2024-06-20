@@ -4,4 +4,8 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: var(--lg);
+
+	> a {
+		width: 200px;
+	}
 }

@@ -40,13 +40,6 @@ export default function MyStack() {
 			<section>
 				<h2 className={style.title}>My go-to tech stack</h2>
 				<div className={style.badgeWrapper}>
-					{/* TYPESCRIPT */}
-					<Badge
-						color={SiTypescriptHex}
-						icon={<SiTypescript />}
-					>
-						Typescript
-					</Badge>
 					{/* REACT */}
 					<Badge
 						color={SiReactHex}
@@ -68,6 +61,13 @@ export default function MyStack() {
 					>
 						Astro
 					</Badge>
+					{/* TYPESCRIPT */}
+					<Badge
+						color={SiTypescriptHex}
+						icon={<SiTypescript />}
+					>
+						Typescript
+					</Badge>
 					{/* SASS */}
 					<Badge
 						color={SiSassHex}
@@ -80,6 +80,13 @@ export default function MyStack() {
 			<section>
 				<h2 className={style.title}>My toolbox</h2>
 				<div className={style.badgeWrapper}>
+					{/* VSCODE */}
+					<Badge
+						color={SiVisualstudiocodeHex}
+						icon={<SiVisualstudiocode />}
+					>
+						VSCode
+					</Badge>
 					{/* LINUX */}
 					<Badge
 						color={SiLinuxHex}
@@ -87,12 +94,12 @@ export default function MyStack() {
 					>
 						Linux
 					</Badge>
-					{/* VSCODE */}
+					{/* DOCKER */}
 					<Badge
-						color={SiVisualstudiocodeHex}
-						icon={<SiVisualstudiocode />}
+						color={SiDockerHex}
+						icon={<SiDocker />}
 					>
-						VSCode
+						Docker
 					</Badge>
 					{/* GIT */}
 					<Badge
@@ -108,13 +115,6 @@ export default function MyStack() {
 					>
 						GitHub
 					</Badge>
-					{/* DOCKER */}
-					<Badge
-						color={SiDockerHex}
-						icon={<SiDocker />}
-					>
-						Docker
-					</Badge>
 					{/* FIGMA */}
 					<Badge
 						color={SiFigmaHex}
@@ -127,27 +127,6 @@ export default function MyStack() {
 			<section>
 				<h2 className={style.title}>My explorations</h2>
 				<div className={style.badgeWrapper}>
-					{/* Mongo DB */}
-					<Badge
-						color={SiMongodbHex}
-						icon={<SiMongodb />}
-					>
-						MongoDB
-					</Badge>
-					{/* MySQL */}
-					<Badge
-						color={SiMysqlHex}
-						icon={<SiMysql />}
-					>
-						MySQL
-					</Badge>
-					{/* NodeJS */}
-					<Badge
-						color={SiNodedotjsHex}
-						icon={<SiNodedotjs />}
-					>
-						Node.Js
-					</Badge>
 					{/* SVELTE */}
 					<Badge
 						color={SiSvelteHex}
@@ -161,6 +140,27 @@ export default function MyStack() {
 						icon={<SiAngular />}
 					>
 						Angular
+					</Badge>
+					{/* NodeJS */}
+					<Badge
+						color={SiNodedotjsHex}
+						icon={<SiNodedotjs />}
+					>
+						Node.Js
+					</Badge>
+					{/* MySQL */}
+					<Badge
+						color={SiMysqlHex}
+						icon={<SiMysql />}
+					>
+						MySQL
+					</Badge>
+					{/* Mongo DB */}
+					<Badge
+						color={SiMongodbHex}
+						icon={<SiMongodb />}
+					>
+						MongoDB
 					</Badge>
 				</div>
 			</section>
