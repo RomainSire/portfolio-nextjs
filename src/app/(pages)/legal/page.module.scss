@@ -1,0 +1,12 @@
+.wrapper {
+	h2 {
+		margin-bottom: var(--lg);
+	}
+	h3 {
+		margin-top: var(--xl);
+		margin-bottom: var(--lg);
+	}
+	p:not(:last-child) {
+		margin-bottom: var(--lg);
+	}
+}

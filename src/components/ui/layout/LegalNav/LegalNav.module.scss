@@ -2,7 +2,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: var(--lg);
+	column-gap: var(--lg);
+	row-gap: var(--xs);
 }
 .link:hover {
 	text-decoration: underline;
