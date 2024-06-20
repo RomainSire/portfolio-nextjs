@@ -8,5 +8,13 @@
 
 	@include desktop {
 		grid-template-columns: 5fr 7fr;
+		grid-template-rows: 1fr auto;
+	}
+}
+
+.footer {
+	padding: var(--sm) 0;
+	@include desktop {
+		grid-column: 1 / span 2;
 	}
 }

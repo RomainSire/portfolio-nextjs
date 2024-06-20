@@ -7,18 +7,26 @@ export default function LegalNav() {
 			<ul className={style.list}>
 				<li>
 					<Link
-						href="/legal-fr"
+						href="/legal"
 						className={style.link}
 					>
-						Mentions légales (Fr)
+						Mentions légales
 					</Link>
 				</li>
 				<li>
 					<Link
-						href="/legal-en"
+						href="/cgv"
 						className={style.link}
 					>
-						Legal Notices (En)
+						CGV
+					</Link>
+				</li>
+				<li>
+					<Link
+						href="/privacy"
+						className={style.link}
+					>
+						Politique de confidentialité
 					</Link>
 				</li>
 			</ul>
