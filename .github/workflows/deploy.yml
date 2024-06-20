@@ -59,8 +59,8 @@ jobs:
               --name $CONTAINER_NAME \
               -dit \
               -p 3000:3000 \
-              --e MAILGUN_API_KEY \
-              --e MAILGUN_URL \
-              --e MAILGUN_SENDER_DOMAIN \
-              --e MAILGUN_SENDER_ADDRESS \
+              --env MAILGUN_API_KEY \
+              --env MAILGUN_URL \
+              --env MAILGUN_SENDER_DOMAIN \
+              --env MAILGUN_SENDER_ADDRESS \
               --restart unless-stopped ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
