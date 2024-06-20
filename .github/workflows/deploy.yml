@@ -26,34 +26,40 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@master
-        env:
-          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
-          MAILGUN_URL: ${{ secrets.MAILGUN_URL }}
-          MAILGUN_SENDER_DOMAIN: ${{ secrets.MAILGUN_SENDER_DOMAIN }}
-          MAILGUN_SENDER_ADDRESS: ${{ secrets.MAILGUN_SENDER_ADDRESS }}
         with:
           name: romainsire/portfolio-nextjs/portfolio
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           dockerfile: Dockerfile
-          buildargs: MAILGUN_API_KEY,MAILGUN_URL,MAILGUN_SENDER_DOMAIN,MAILGUN_SENDER_ADDRESS
           tags: latest
 
       - name: Deploy package to VPS
         uses: appleboy/ssh-action@master
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
+          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
+          MAILGUN_URL: ${{ secrets.MAILGUN_URL }}
+          MAILGUN_SENDER_DOMAIN: ${{ secrets.MAILGUN_SENDER_DOMAIN }}
+          MAILGUN_SENDER_ADDRESS: ${{ secrets.MAILGUN_SENDER_ADDRESS }}
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          envs: GITHUB_USERNAME
+          envs: GITHUB_USERNAME, MAILGUN_API_KEY, MAILGUN_URL, MAILGUN_SENDER_DOMAIN, MAILGUN_SENDER_ADDRESS
           script: |
             CONTAINER_NAME=portfolio
             cat ~/portfolio/pat | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
             docker pull ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
             docker stop $CONTAINER_NAME
             docker system prune -f
-            docker run --name $CONTAINER_NAME -dit -p 3000:3000 --restart unless-stopped ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
+            docker run \
+              --name $CONTAINER_NAME \
+              -dit \
+              -p 3000:3000 \
+              --env MAILGUN_API_KEY=$MAILGUN_API_KEY \
+              --env MAILGUN_URL=$MAILGUN_URL \
+              --env MAILGUN_SENDER_DOMAIN=$MAILGUN_SENDER_DOMAIN \
+              --env MAILGUN_SENDER_ADDRESS=$MAILGUN_SENDER_ADDRESS \
+              --restart unless-stopped ghcr.io/romainsire/portfolio-nextjs/portfolio:latest
