@@ -71,7 +71,7 @@ export default function ContactForm() {
 						className={style.label}
 						htmlFor="name"
 					>
-						Your name
+						Votre nom
 					</label>
 					<input
 						className={style.input}
@@ -86,7 +86,7 @@ export default function ContactForm() {
 						className={style.label}
 						htmlFor="email"
 					>
-						Your email
+						Votre email
 					</label>
 					<input
 						className={style.input}
@@ -101,7 +101,7 @@ export default function ContactForm() {
 						className={style.label}
 						htmlFor="message"
 					>
-						Your message
+						Votre message
 					</label>
 					<textarea
 						className={style.input}
@@ -116,7 +116,7 @@ export default function ContactForm() {
 						className={btnStyle.button}
 					>
 						<Sparkle size={24} />
-						Send the message
+						Envoyer le message
 						<Sparkle size={24} />
 					</button>
 				</div>
@@ -128,13 +128,14 @@ export default function ContactForm() {
 			>
 				<div className={style.success}>
 					<CheckFat size={48} />
-					<strong>Your message has been sent successfully!</strong>
+					<strong>Votre message a été envoyé avec succès !</strong>
 				</div>
 				<p>
-					Thank you for contacting me.
-					<br />I will get back to you as soon as possible.
+					Merci de m’avoir contacté.
 					<br />
-					Check ou your spam folder if you don&apos;t receive a confirmation email.
+					Je vous répondrai dés que possible.
+					<br />
+					Vérifiez votre dossier spam si vous ne recevez pas d’email de confirmation.
 				</p>
 				<footer>
 					<button
@@ -142,7 +143,7 @@ export default function ContactForm() {
 						className={`${btnStyle.button} ${btnStyle.secondary}`}
 						onClick={() => closeModal("success")}
 					>
-						Close
+						Fermer
 					</button>
 				</footer>
 			</Modal>
@@ -153,16 +154,16 @@ export default function ContactForm() {
 			>
 				<div className={style.fail}>
 					<SmileySad size={48} />
-					<strong>There was an error sending your message.</strong>
+					<strong>Une erreur est survenue lors de l’envoi de votre message.</strong>
 				</div>
-				<p>Please try again later or contact me through my social medias.</p>
+				<p>Veuillez réessayer plus tard ou me contacter via mes réseaux sociaux.</p>
 				<footer>
 					<button
 						type="button"
 						className={`${btnStyle.button} ${btnStyle.secondary}`}
 						onClick={() => closeModal("fail")}
 					>
-						Close
+						Fermer
 					</button>
 				</footer>
 			</Modal>

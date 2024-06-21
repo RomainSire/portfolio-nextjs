@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import style from "./page.module.scss";
 
 export const metadata: Metadata = {
-	title: "Work",
+	title: "Réalisations",
 	description:
-		"Explore the portfolio of Romain Sire, a freelance frontend developer. Discover a range of projects, from web applications to ecourage renewable energy to personal portfolio and a small social network. Each project showcases a unique blend of design, coding, deployment, and project management skills.",
+		"Explorez le portfolio de Romain Siré, développeur frontend freelance. Découvrez une gamme de projets, allant des applications web pour encourager les énergies renouvelables à son portfolio personnel et un petit réseau social. Chaque projet met en valeur une combinaison unique de compétences en design, code, déploiement et gestion de projet.",
 };
 
 export default async function WorkPage() {

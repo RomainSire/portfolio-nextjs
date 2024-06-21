@@ -23,8 +23,8 @@ export async function sendConfirmationEmail(email: string, name: string) {
 	return getMailgunClient().messages.create(process.env.MAILGUN_SENDER_DOMAIN!, {
 		from: process.env.MAILGUN_SENDER_ADDRESS!,
 		to: email,
-		subject: "Contact form submission from Romain Siré",
-		text: `Hello ${name}, we have received your message and will get back to you as soon as possible.`,
+		subject: "Soumission du formulaire de contact de Romain Siré",
+		text: `Bonjour ${name}, j'ai bien reçu votre message et je vous répondrai dès que possible.`,
 	});
 }
 
@@ -36,7 +36,7 @@ export async function sendContactMail(email: string, name: string, message: stri
 		from: process.env.MAILGUN_SENDER_ADDRESS!,
 		to: [process.env.MAILGUN_SENDER_ADDRESS!],
 		"h:Reply-To": email,
-		subject: `New message from ${name} on your website!`,
+		subject: `Nouveau message de ${name} sur votre site !`,
 		text: message,
 	});
 }

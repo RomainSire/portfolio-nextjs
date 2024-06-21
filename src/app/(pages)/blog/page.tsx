@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Blog",
 	description:
-		"Dive into the insightful blog of Romain Sire, a freelance frontend developer. Explore a variety of topics from tutorials to trends in frontend development, project management, freelancing and more. Each post reflects Romain's expertise and passion for coding and technology.",
+		"Plongez dans le blog de Romain Siré, développeur frontend freelance. Explorez une variété de sujets allant des tutoriels aux tendances du développement frontend, en passant par la gestion de projet, le freelancing et plus encore. Chaque article reflète l'expertise et la passion de Romain pour le code et la technologie.",
 };
 
 export default function BlogPage() {

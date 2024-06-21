@@ -34,7 +34,7 @@ export default function WorkItem({ workItem, reverse }: WorkItemProps) {
 			<Image
 				className={style.image}
 				src={workItem.image}
-				alt={`Screenshot of the project: ${workItem.title}`}
+				alt={`Capture d'écran du projet : ${workItem.title}`}
 				height={300}
 				width={600}
 			/>

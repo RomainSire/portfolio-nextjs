@@ -14,18 +14,18 @@ type Props = Readonly<{
  */
 export const metadata: Metadata = {
 	title: {
-		template: "%s | Romain Siré - Frontend Developer",
-		default: "Romain Siré - Frontend Developer",
+		template: "%s | Romain Siré - Développeur frontend freelance",
+		default: "Romain Siré - Développeur frontend freelance",
 	},
 	description:
-		"Welcome to the portfolio of Romain Siré, a freelance frontend developer specializing in Typescript, React, Next.Js, Astro, and SASS. Discover his professional journey, explore his work, read insightful blog posts, and get in touch for collaborations or discussions.",
+		"Bienvenue sur le portfolio de Romain Siré, développeur frontend freelance spécialisé en Typescript, React, Next.Js, Astro et SASS. Découvrez son parcours professionnel, explorez ses réalisations, lisez des articles de blog et contactez-le pour des collaborations ou des discussions.",
 	metadataBase: new URL("https://romainsire.com"),
 	openGraph: {
-		title: "Romain Siré - Frontend Developer",
+		title: "Romain Siré - Développeur frontend freelance",
 		description:
-			"Welcome to the portfolio of Romain Siré, a freelance frontend developer specializing in Typescript, React, Next.Js, Astro, and SASS. Discover his professional journey, explore his work, read insightful blog posts, and get in touch for collaborations or discussions.",
+			"Bienvenue sur le portfolio de Romain Siré, développeur frontend freelance spécialisé en Typescript, React, Next.Js, Astro et SASS. Découvrez son parcours professionnel, explorez ses réalisations, lisez des articles de blog et contactez-le pour des collaborations ou des discussions.",
 		url: "https://romainsire.com",
-		siteName: "Romain Siré - Frontend Developer",
+		siteName: "Romain Siré - Développeur frontend freelance",
 		images: [
 			{
 				url: "https://romainsire.com/opengraph-image.jpg", // Must be an absolute URL
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 				height: 630,
 			},
 		],
-		locale: "en_US",
+		locale: "fr-FR",
 		type: "website",
 	},
 	twitter: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
  */
 export default function RootLayout({ children }: Props) {
 	return (
-		<html lang="en">
+		<html lang="fr">
 			<body className={`${ubuntuFont.variable} ${rokkittFont.variable}`}>{children}</body>
 		</html>
 	);

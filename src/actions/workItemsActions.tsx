@@ -28,7 +28,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 		{
 			title: "Notrelec",
 			description:
-				"The job that I enjoy and motivates me, in one of the most meaningful business sector for me! The web application aims to facilitate the creation and management of renewable energy self-consumption communities. The team was small, the project was ambitious and the schedule was tight, so I had to wear many hats, from design, code, deployment, and also project management and intern training. The project was very challenging and rewarding!",
+				"Le travail que j'apprécie et qui me motive, dans l'un des secteurs d'activité qui fait le plus de sens pour moi ! L'application web vise à faciliter la création et la gestion de communautés d'autoconsommation d'énergie renouvelable. L'équipe était petite, le projet était ambitieux et le calendrier était serré, j'ai donc dû porter plusieurs casquettes, du design, du code, du déploiement, mais aussi de la gestion de projet et de la formation des alternants. Le projet a été très stimulant et gratifiant !",
 			stack: [
 				{
 					name: "Next.js",
@@ -49,11 +49,11 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 			image: "/work/notrelec.png",
 			github: {
 				url: "",
-				tooltip: "The Github repository is private",
+				tooltip: "Le dépôt Github est privé",
 			},
 			demo: {
 				url: "",
-				tooltip: "The backend is still in development",
+				tooltip: "Le backend est toujours en développement",
 			},
 		},
 		/**
@@ -62,7 +62,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 		{
 			title: "My portfolio",
 			description:
-				"To showcase my skills, I spent a few days to design and code my own portfolio (yes, the one you're visiting right now!). This self-imposed challenge pushed me out of my comfort zone: because while I typically gravitate towards clean, minimalist corporate websites, this time I embraced a bold new-brutalism style for my portfolio. It was a refreshing and rewarding way to demonstrate my versatility and love for exploration.",
+				"Pour mettre en valeur mes compétences, j'ai passé quelques jours à concevoir et à coder mon propre portfolio (oui, celui que vous visitez en ce moment même !). Ca a été l'occasion de me lancer un défi : alors que j'ai plutôt l'habitude de coder des sites web d'entreprise minimalistes et épurés, j'ai cette fois adopté un style néo-brutalisme audacieux pour mon portfolio. Ce fut une façon stimulante et enrichissante d'explorer et de sortir des sentiers battus.",
 			stack: [
 				{
 					name: "Next.js",
@@ -83,11 +83,11 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 			image: "/work/portfolio.png",
 			github: {
 				url: "https://github.com/RomainSire/portfolio-nextJs",
-				tooltip: "Check the code on Github",
+				tooltip: "Voir le code sur Github",
 			},
 			demo: {
 				url: "https://romainsire.com",
-				tooltip: "Check the website",
+				tooltip: "Voir le site web",
 			},
 		},
 		/**
@@ -96,7 +96,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 		{
 			title: "Thess Corporate",
 			description:
-				"At Thess (THérapy Smart System), I helped develop a groundbreaking remote patient monitoring solution with a secure, adjustable medication dispenser. Working within a 10-person agile Scrum team for 3 years (as permanent contract, then as freelance), I thrived on a mix of design, new feature coding, maintenance, and testing. A rewarding experience impacting patient lives!",
+				"Chez Thess (THérapy Smart System), j'ai contribué au développement d'une solution innovante de télésurveillance des patients, dotée d'un distributeur de médicaments sécurisé et réglable. Travaillant au sein d'une équipe Scrum Agile de 10 personnes pendant 3 ans (en CDI puis en freelance), j'ai pu m'épanouir dans un environnement mêlant design, développement de nouvelles fonctionnalités, maintenance et tests. Une expérience enrichissante qui a un impact positif sur la vie des patients !",
 			stack: [
 				{
 					name: "React",
@@ -117,11 +117,11 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 			image: "/work/thess.png",
 			github: {
 				url: "",
-				tooltip: "The Gitlab repository is private",
+				tooltip: "Le dépôt Gitlab est privé",
 			},
 			demo: {
 				url: "https://www.lavaleriane.fr/solutions/thess",
-				tooltip: "Check the website",
+				tooltip: "Voir le site web de présentation",
 			},
 		},
 		/**
@@ -130,7 +130,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 		{
 			title: "Groupomania",
 			description:
-				"It was the last project of my web development training. I jumped headfirst into building a full-stack social network for a fictional company. This project was packed with features like user profiles, search, content creation with image resizing, etc. The learning curve was steep, and the timeframe was short (only 1,5 month). This project solidified my love for web development and showed my ability to learn quickly and tackle complex challenges.",
+				"C'était le projet final de ma formation en développement web. Je me suis lancé dans la construction d'un réseau social full-stack pour une entreprise fictive. Ce projet regorgeait de fonctionnalités telles que les profils d'utilisateurs, la recherche, la création de contenu avec redimensionnement d'images à la vonée, les notifications, etc. La courbe d'apprentissage était raide et le délai serré (seulement 1 mois et demi). Ce projet a renforcé mon intérêt pour le développement web et a démontré ma capacité à apprendre rapidement et à relever des défis complexes.",
 			stack: [
 				{
 					name: "Angular",
@@ -151,11 +151,11 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 			image: "/work/groupomania.png",
 			github: {
 				url: "https://github.com/RomainSire/OC-P7-Social-Network",
-				tooltip: "Check the code on Github",
+				tooltip: "Voir le code sur Github",
 			},
 			demo: {
 				url: "https://youtu.be/WLgvV_l-GcI",
-				tooltip: "Check the demo on Youtube",
+				tooltip: "Voir la démo sur Youtube",
 			},
 		},
 	];

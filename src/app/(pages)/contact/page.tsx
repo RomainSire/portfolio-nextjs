@@ -6,19 +6,19 @@ import style from "./page.module.scss";
 export const metadata: Metadata = {
 	title: "Contact",
 	description:
-		"Get in touch with Romain Sire, a freelance frontend developer. Whether you have a project in mind or just want to say hi, Romain is always open to discussions. Connect on social media or send a direct message through the contact form.",
+		"Entrez en contact avec Romain Siré, développeur frontend freelance. Que vous ayez un projet en tête ou que vous souhaitiez simplement dire bonjour, Romain est toujours ouvert aux discussions. Contactez-le sur les réseaux sociaux ou envoyez-lui un message direct via le formulaire de contact.",
 };
 
 export default function ContactPage() {
 	return (
 		<div className={style.wrapper}>
-			<h2>Let&#39;s discuss your project!</h2>
+			<h2>Discutons de votre projet !</h2>
 			<section>
-				<h3 className={style.subtitle}>Come to say hi on...</h3>
+				<h3 className={style.subtitle}>Venez me rejoindre sur...</h3>
 				<SocialBtns />
 			</section>
 			<section>
-				<h3 className={style.subtitle}>Or send me a message</h3>
+				<h3 className={style.subtitle}>Ou envoyez-moi directement un message</h3>
 				<ContactForm />
 			</section>
 		</div>

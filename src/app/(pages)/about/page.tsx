@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import style from "./page.module.scss";
 
 export const metadata: Metadata = {
-	title: "About",
+	title: "À propos",
 	description:
-		"Discover more about Romain Sire, a skilled freelance frontend developer specializing in Typescript, React, Next.Js, Astro, and SASS. Learn about his journey, expertise, and the advanced technologies he uses in his projects.",
+		"Découvrez plus en détail Romain Siré, un développeur frontend freelance qualifié, spécialisé en Typescript, React, Next.Js, Astro et SASS. Apprenez-en plus sur son parcours, son expertise et les technologies qu'il utilise dans ses projets.",
 };
 
 export default function AboutPage() {

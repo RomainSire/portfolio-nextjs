@@ -38,7 +38,7 @@ export default function MyStack() {
 	return (
 		<div className={style.wrapper}>
 			<section>
-				<h2 className={style.title}>My go-to tech stack</h2>
+				<h2 className={style.title}>Ma stack de prédilection</h2>
 				<div className={style.badgeWrapper}>
 					{/* REACT */}
 					<Badge
@@ -78,7 +78,7 @@ export default function MyStack() {
 				</div>
 			</section>
 			<section>
-				<h2 className={style.title}>My toolbox</h2>
+				<h2 className={style.title}>Ma boîte à outils</h2>
 				<div className={style.badgeWrapper}>
 					{/* VSCODE */}
 					<Badge
@@ -125,7 +125,7 @@ export default function MyStack() {
 				</div>
 			</section>
 			<section>
-				<h2 className={style.title}>My explorations</h2>
+				<h2 className={style.title}>Mes explorations</h2>
 				<div className={style.badgeWrapper}>
 					{/* SVELTE */}
 					<Badge

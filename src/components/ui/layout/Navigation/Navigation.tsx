@@ -8,8 +8,8 @@ export default function Navigation() {
 				className={style.list}
 				role="list"
 			>
-				<NavItem href="/about">About</NavItem>
-				<NavItem href="/work">Work</NavItem>
+				<NavItem href="/about">Intro</NavItem>
+				<NavItem href="/work">Projets</NavItem>
 				{/* <NavItem href="/blog">Blog</NavItem> */}
 				<NavItem href="/contact">Contact</NavItem>
 			</ul>

@@ -6,16 +6,16 @@ export default function Hero() {
 		<section className={style.hero}>
 			<Image
 				src="/profile.jpeg"
-				alt="My own headshot smiling in front of a park background"
+				alt="Une photo portrait de moi avec un parc en arrière-plan."
 				width={350}
 				height={350}
 				className={style.img}
 			/>
 			<h1 className={style.title}>Romain Siré</h1>
 			<p>
-				I&apos;m a french <strong>freelance front-end developer</strong> for hire,
+				<strong>Développeur frontend freelance</strong> à votre service,
 				<br />
-				and I also like to code fun apps on my free time.
+				j’aime aussi coder des petites applis pendant mon temps libre.
 			</p>
 		</section>
 	);
