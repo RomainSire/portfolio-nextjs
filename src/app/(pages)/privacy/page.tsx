@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import style from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "Politique de confidentialité",
+	description: "Politique de confidentialité du site romainsire.com",
+};
 
 export default function PrivacyPage() {
 	return (

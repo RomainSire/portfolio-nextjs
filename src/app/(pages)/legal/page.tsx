@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import style from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "Mentions légales",
+	description: "Mentions légales du site romainsire.com",
+};
 
 export default function LegalPage() {
 	return (

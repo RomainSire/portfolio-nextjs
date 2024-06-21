@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import style from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "Conditions Générales de Vente",
+	description: "Consultez les conditions générales de vente de Romain SIRE EI, freelance en développement web.",
+};
 
 export default function CGVPage() {
 	return (
