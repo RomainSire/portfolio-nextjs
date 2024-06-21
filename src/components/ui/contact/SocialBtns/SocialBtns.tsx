@@ -23,7 +23,7 @@ export default function SocialBtns() {
 			<Link
 				className={`${btnStyle.button} ${btnStyle.secondary}`}
 				target="_blank"
-				href="https://twitter.com/freebison"
+				href="https://twitter.com/bisonvoyageur"
 			>
 				<SiTwitter /> Twitter
 			</Link>
