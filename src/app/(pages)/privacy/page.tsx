@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
 	return (
 		<div className={style.wrapper}>
-			<h2>Politique de confidentialité</h2>
+			<h1>Politique de confidentialité</h1>
 			<p>En vigueur au 01 juin 2024</p>
 			<p>Chez Romain SIRE EI, la protection de vos données personnelles est une priorité.</p>
 			<p>
@@ -23,13 +23,13 @@ export default function PrivacyPage() {
 				« RGPD »).
 			</p>
 
-			<h3>1. Qui est le responsable de traitement ?</h3>
+			<h2>1. Qui est le responsable de traitement ?</h2>
 			<p>
 				Le responsable de traitement est la société Romain SIRE, Entreprise Individuelle, et dont le siège social est
 				situé au 10 El Plaçal, 66500 Mosset (ci-après « Nous »).
 			</p>
 
-			<h3>2. Quelles données collectons-nous ? </h3>
+			<h2>2. Quelles données collectons-nous ? </h2>
 			<p>
 				Une donnée à caractère personnel est une donnée qui permet d’identifier un individu directement ou par
 				recoupement avec d’autres données.
@@ -45,10 +45,10 @@ export default function PrivacyPage() {
 				et sont nécessaires pour vous fournir nos services.
 			</p>
 
-			<h3>
+			<h2>
 				3. Sur quelles bases légales, pour quelles finalités et pendant combien de temps conservons-nous vos données
 				personnelles ?
-			</h3>
+			</h2>
 			<p>Nous traitons vos données personnelles sur les bases légales suivantes :</p>
 			<ul>
 				<li>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
 				</li>
 			</ul>
 
-			<h3>4. Qui sont les destinataires de vos données ?</h3>
+			<h2>4. Qui sont les destinataires de vos données ?</h2>
 			<p>Auront accès à vos données à caractère personnel :</p>
 			<ul>
 				<li>Le personnel de notre société</li>
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
 				</li>
 			</ul>
 
-			<h3>5. Vos données sont-elles susceptibles d’être transférées hors de l’Union européenne ?</h3>
+			<h2>5. Vos données sont-elles susceptibles d’être transférées hors de l’Union européenne ?</h2>
 			<p>
 				Vos données sont conservées et stockées pendant toute la durée des traitements sur les serveurs de la société
 				Tutanota GmbH (service de messagerie chiffrée), situés en Allemagne.
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
 				transferts hors de l’Union européenne.
 			</p>
 
-			<h3>6. Quels sont vos droits sur vos données ?</h3>
+			<h2>6. Quels sont vos droits sur vos données ?</h2>
 			<p>Vous disposez des droits suivants s’agissant de vos données personnelles :</p>
 			<ul>
 				<li>
@@ -156,10 +156,10 @@ export default function PrivacyPage() {
 				occasion de nous fournir des informations ou documents complémentaires pour justifier votre identité.
 			</p>
 
-			<h3>7. Point de contact en matière de données personnelles </h3>
+			<h2>7. Point de contact en matière de données personnelles </h2>
 			<p>Email de contact : support@romainsire.com</p>
 
-			<h3>8. Modifications</h3>
+			<h2>8. Modifications</h2>
 			<p>
 				Nous pouvons modifier à tout moment la présente politique, afin notamment de nous conformer à toutes évolutions
 				réglementaires, jurisprudentielles, éditoriales ou techniques. Ces modifications s’appliqueront à la date

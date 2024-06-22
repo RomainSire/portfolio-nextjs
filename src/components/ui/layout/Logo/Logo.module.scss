@@ -4,6 +4,9 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	gap: var(--sm);
+	font-size: var(--lg);
+	font-family: var(--font-heading);
+	font-weight: 700;
 }
 .before,
 .after {

@@ -6,7 +6,7 @@ import style from "./WhoAmI.module.scss";
 export default function WhoAmI() {
 	return (
 		<section className={style.section}>
-			<h2 className={style.title}>Qui suis-je ?</h2>
+			<h1 className={style.title}>Qui suis-je ?</h1>
 			<p>
 				En tant qu’ancien ingénieur en reconversion dans le monde en constante évolution du développement web, je suis
 				captivé par les <strong>possibilités infinies</strong> du domaine digital.

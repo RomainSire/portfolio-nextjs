@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 export default function CGVPage() {
 	return (
 		<div className={style.wrapper}>
-			<h2>Conditions Générales de Vente</h2>
+			<h1>Conditions Générales de Vente</h1>
 			<p>En vigueur au 01 juin 2024</p>
 
 			<section>
-				<h3>Article 1 : Objet</h3>
+				<h2>Article 1 : Objet</h2>
 				<p>
 					Les présentes conditions générales de vente (ci-après dénommées « CGV ») définissent les modalités de
 					prestation de services de développement informatique par Romain SIRE EI (ci-après dénommé le « Prestataire »)
@@ -35,7 +35,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 2 : Définitions</h3>
+				<h2>Article 2 : Définitions</h2>
 				<p>Au sens des présentes CGV, les termes suivants sont définis comme suit :</p>
 				<ul>
 					<li>
@@ -86,16 +86,16 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 3 : Formation du contrat</h3>
+				<h2>Article 3 : Formation du contrat</h2>
 				<p>Cet article définit les étapes de la formation du contrat entre le Prestataire et le Client.</p>
 
-				<h4>3.1. Demande de prestation</h4>
+				<h3>3.1. Demande de prestation</h3>
 				<p>
 					Le Client contacte le Prestataire par courrier électronique, téléphone ou via le formulaire de contact du site
 					web du Prestataire pour obtenir un contrat pour une prestation de développement web.
 				</p>
 
-				<h4>3.2. Établissement du contrat</h4>
+				<h3>3.2. Établissement du contrat</h3>
 				<p>
 					Le Prestataire analyse les besoins du Client et établit un contrat (devis ou contrat de prestation de service)
 					détaillé, précisant :
@@ -110,37 +110,37 @@ export default function CGVPage() {
 				</ul>
 				<p>Le contrat est transmis au Client par courrier électronique.</p>
 
-				<h4>3.3. Acceptation du contrat</h4>
+				<h3>3.3. Acceptation du contrat</h3>
 				<p>
 					Le Client retourne le contrat signé (manuellement ou électroniquement) au Prestataire, accompagnée de
 					l’acompte éventuellement prévu. L’acompte est payable par virement bancaire.
 				</p>
 
-				<h4>3.4. Conclusion du contrat</h4>
+				<h3>3.4. Conclusion du contrat</h3>
 				<p>
 					Le contrat de prestation de services est formé à la date de réception du devis signé et de l’éventuel acompte
 					par le Prestataire.
 				</p>
 
-				<h4>3.5. Modifications du contrat</h4>
+				<h3>3.5. Modifications du contrat</h3>
 				<p>
 					Le contrat peut être modifié après acceptation par le Client, à la demande du Client ou du Prestataire. Toute
 					modification du contrat doit faire l’objet d’un avenant signé par les deux parties.
 				</p>
 
-				<h4>3.6. Annulation de la commande</h4>
+				<h3>3.6. Annulation de la commande</h3>
 				<p>
 					Le Client peut annuler sa commande à tout moment <strong>avant le début des prestations</strong>. L’acompte
 					versé par le Client lui sera remboursé dans un délai de 14 jours suivant la notification de l’annulation de la
 					commande.
 				</p>
 
-				<h4>3.7. Signature</h4>
+				<h3>3.7. Signature</h3>
 				<p>Les signatures manuelle ou électronique du devis ou du contrat sont valables entre les parties.</p>
 			</section>
 
 			<section>
-				<h3>Article 4 : Objet de la mission</h3>
+				<h2>Article 4 : Objet de la mission</h2>
 				<p>L’objet de chaque mission est précisément défini dans le contrat.</p>
 				<p>Le contrat précise notamment :</p>
 				<ul>
@@ -159,7 +159,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 5 : Modalités de réalisation de la Mission</h3>
+				<h2>Article 5 : Modalités de réalisation de la Mission</h2>
 				<p>
 					Le prestataire s’engage envers le Client à réaliser la Mission telle que définie dans le contrat, avec le plus
 					grand professionnalisme, à respecter les dispositions légales et réglementaires applicables et à se conformer
@@ -176,9 +176,9 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 6 : Prix</h3>
+				<h2>Article 6 : Prix</h2>
 
-				<h4>6.1. Base de détermination du prix</h4>
+				<h3>6.1. Base de détermination du prix</h3>
 				<p>Le prix des prestations est déterminé selon les modalités suivantes :</p>
 				<ul>
 					<li>
@@ -191,13 +191,13 @@ export default function CGVPage() {
 					</li>
 				</ul>
 
-				<h4>6.2. Frais annexes</h4>
+				<h3>6.2. Frais annexes</h3>
 				<p>
 					Les frais annexes éventuels, tels que les frais de déplacement, d’hébergement ou de matériel, sont facturés au
 					Client en sus du prix des prestations. Ces frais sont précisés dans le contrat.
 				</p>
 
-				<h4>6.3. Révision du prix</h4>
+				<h3>6.3. Révision du prix</h3>
 				<p>Le prix des prestations peut être révisé dans les cas suivants :</p>
 				<ul>
 					<li>Changement significatif des besoins du Client</li>
@@ -206,18 +206,18 @@ export default function CGVPage() {
 				</ul>
 				<p>Toute révision du prix fera l’objet d’un avenant au contrat signé par les deux parties.</p>
 
-				<h4>6.4. Modalités de paiement</h4>
+				<h3>6.4. Modalités de paiement</h3>
 				<p>Le Client s’engage à régler la facture dans un délai de 30 jours suivant sa réception.</p>
 				<p>Le Client peut régler ses factures par virement bancaire.</p>
 
-				<h4>6.5. Pénalités de retard de paiement</h4>
+				<h3>6.5. Pénalités de retard de paiement</h3>
 				<p>
 					En cas de retard de paiement, le Client s’expose à des pénalités de retard (3 x le taux de l’intérêt légal à
 					la date de la signature du devis) et à une indemnité forfaitaire de 40€ pour frais de recouvrements à verser
 					au Prestataire.
 				</p>
 
-				<h4>6.6. Acomptes</h4>
+				<h3>6.6. Acomptes</h3>
 				<p>
 					Si expressément mentionné dans le contrat, un acompte de 30% du prix total des prestations peut être exigé et
 					est payable à la signature du devis.
@@ -226,7 +226,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 7 : Résiliation anticipée du contrat</h3>
+				<h2>Article 7 : Résiliation anticipée du contrat</h2>
 				<p>
 					Dans le cas d’une tarification au taux horaire, le contrat pourra être résilié à tout instant par chacune des
 					parties, sous la réserve d’un préavis de deux semaines.
@@ -239,7 +239,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 8 : Déclaration d’indépendance réciproque</h3>
+				<h2>Article 8 : Déclaration d’indépendance réciproque</h2>
 				<p>
 					La relation établie entre le Client et le Prestataire est celle d’entreprises indépendantes et autonomes.
 					Aucune clause du contrat ne pourra être interprétée comme donnant à l’une des Parties le pouvoir de diriger
@@ -269,7 +269,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 9 – Obligation de confidentialité</h3>
+				<h2>Article 9 – Obligation de confidentialité</h2>
 				<p>
 					Le prestataire considérera comme strictement confidentiel, et s’interdit de divulguer, toute information,
 					document, donnée ou concept, dont il pourra avoir connaissance à l’occasion du présent contrat. Pour
@@ -281,7 +281,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 10 – Référencement</h3>
+				<h2>Article 10 – Référencement</h2>
 				<p>
 					Le client accepte que le prestataire puisse faire figurer parmi ses références les travaux accomplis dans le
 					cadre du présent contrat.
@@ -289,7 +289,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 11 – Propriété des résultats</h3>
+				<h2>Article 11 – Propriété des résultats</h2>
 				<p>
 					De convention expresse, les résultats de la Mission seront en la pleine maîtrise du client, à compter du
 					paiement intégral de la prestation et le client pourra en disposer comme il l’entend. Le prestataire, pour sa
@@ -299,7 +299,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 12 – Garanties</h3>
+				<h2>Article 12 – Garanties</h2>
 				<p>
 					Le prestataire garantit le client contre toute revendication de tiers alléguée à l’encontre du client et
 					concernant les éléments, ou informations, fournis par le prestataire au client.
@@ -307,7 +307,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 13 – Responsabilités</h3>
+				<h2>Article 13 – Responsabilités</h2>
 				<p>
 					Le client convient que, quels que soient les fondements de sa réclamation, et la procédure suivie pour la
 					mettre en œuvre, la responsabilité éventuelle du prestataire à raison de l’exécution des obligations prévues
@@ -326,7 +326,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 14 – Assurance</h3>
+				<h2>Article 14 – Assurance</h2>
 				<p>
 					Le Prestataire souscrit une assurance responsabilité civile professionnelle pour couvrir les dommages causés à
 					des tiers dans le cadre de l’exécution du présent Contrat.
@@ -335,7 +335,7 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 15 – Force majeure</h3>
+				<h2>Article 15 – Force majeure</h2>
 				<p>
 					On entend par force majeure des événements de guerre déclarés ou non déclarés, de grève générale de travail,
 					de maladies épidémiques, de mise en quarantaine, d’incendie, de catastrophes naturelles, d’accidents ou
@@ -348,29 +348,29 @@ export default function CGVPage() {
 			</section>
 
 			<section>
-				<h3>Article 16 – Dispositions générales</h3>
+				<h2>Article 16 – Dispositions générales</h2>
 
-				<h4>16.1. Bonne foi et coopération</h4>
+				<h3>16.1. Bonne foi et coopération</h3>
 				<p>
 					Les Parties s’engagent à toujours se comporter l’une envers l’autre comme des partenaires loyaux et de bonne
 					foi et notamment à s’informer mutuellement de toute difficulté qu’elles pourraient rencontrer à l’occasion de
 					l’exécution du Contrat ainsi qu’à coopérer à la bonne exécution du Contrat.
 				</p>
 
-				<h4>16.2. Modification du Contrat</h4>
+				<h3>16.2. Modification du Contrat</h3>
 				<p>
 					Aucun document postérieur, aucune modification du Contrat quelle qu’en soit la forme ne produira d’effet entre
 					les Parties sans prendre la forme d’un avenant daté et signé par elles.
 				</p>
 
-				<h4>16.3. Nullité</h4>
+				<h3>16.3. Nullité</h3>
 				<p>
 					Si l’une quelconque des stipulations du Contrat s’avérait nulle au regard d’une règle de droit en vigueur ou
 					d’une décision judiciaire devenue définitive, elle serait alors réputée non écrite, sans pour autant entraîner
 					la nullité du Contrat ni altérer la validité des autres stipulations.
 				</p>
 
-				<h4>16.4. Droit applicable</h4>
+				<h3>16.4. Droit applicable</h3>
 				<p>Le Contrat est soumis au droit français.</p>
 			</section>
 		</div>

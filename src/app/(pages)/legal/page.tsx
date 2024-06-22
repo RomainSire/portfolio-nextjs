@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function LegalPage() {
 	return (
 		<div className={style.wrapper}>
-			<h2>Mentions légales</h2>
+			<h1>Mentions légales</h1>
 			<p>En vigueur au 01 juin 2024</p>
 			<p>
 				Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance
@@ -24,7 +24,7 @@ export default function LegalPage() {
 				Ces dernières sont accessibles sur le Site à la rubrique « <strong>Mentions légales</strong> ».
 			</p>
 
-			<h3>ARTICLE 1 - L’ÉDITEUR</h3>
+			<h2>ARTICLE 1 - L’ÉDITEUR</h2>
 			<p>
 				L’édition et la direction de la publication du Site est assurée par Romain Siré, domiciliée 10 El Plaçal 66500
 				Mosset FRANCE, dont le numéro de téléphone est 33679887956, et l’adresse e-mail support@romainsire.com.
@@ -33,20 +33,20 @@ export default function LegalPage() {
 				ci-après l’« <strong>Editeur</strong> ».
 			</p>
 
-			<h3>ARTICLE 2 - L’HÉBERGEUR</h3>
+			<h2>ARTICLE 2 - L’HÉBERGEUR</h2>
 			<p>
 				L’hébergeur du Site est la société HOSTINGER INTERNATIONAL LTD, dont le siège social est situé au 61 Lordou
 				Vironos Street, 6023 Larnaca, Chypre, joignable à l’adresse : https://www.hostinger.fr/contact
 			</p>
 
-			<h3>ARTICLE 3 - ACCÈS AU SITE</h3>
+			<h2>ARTICLE 3 - ACCÈS AU SITE</h2>
 			<p>
 				Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non
 				et pouvant découlant d’une nécessité de maintenance.
 			</p>
 			<p>En cas de modification, interruption ou suspension du Site, l’Editeur ne saurait être tenu responsable.</p>
 
-			<h3>ARTICLE 4 - COLLECTE DES DONNÉES</h3>
+			<h2>ARTICLE 4 - COLLECTE DES DONNÉES</h2>
 			<p>
 				Le Site assure à l’Utilisateur une collecte et un traitement d’informations personnelles (via le formulaire de
 				contact) dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à
@@ -55,7 +55,7 @@ export default function LegalPage() {
 			<p>
 				En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l’Utilisateur dispose d’un droit
 				d’accès, de rectification, de suppression et d’opposition de ses données personnelles. L’Utilisateur exerce ce
-				droit par mail à l’adresse email support@romainsire.com﻿
+				droit par mail à l’adresse email support@romainsire.com
 			</p>
 			<p>
 				Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site﻿, sans

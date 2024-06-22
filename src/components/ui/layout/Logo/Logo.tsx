@@ -4,7 +4,7 @@ const logoTitle = "Romain Siré";
 
 export default function Logo() {
 	return (
-		<h1>
+		<div>
 			<a
 				className={style.link}
 				href="/"
@@ -18,6 +18,6 @@ export default function Logo() {
 				</span>
 				<span className={style.after}>&#47;&#62;</span>
 			</a>
-		</h1>
+		</div>
 	);
 }

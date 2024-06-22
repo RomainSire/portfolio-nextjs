@@ -19,7 +19,7 @@ type WorkItemProps = {
 export default function WorkItem({ workItem, reverse }: WorkItemProps) {
 	return (
 		<article className={`${style.wrapper} ${reverse ? style.reverse : ""}`}>
-			<h2 className={style.title}>{workItem.title}</h2>
+			<h1 className={style.title}>{workItem.title}</h1>
 			<div className={style.badges}>
 				{workItem.stack.map((stackItem) => (
 					<Badge
