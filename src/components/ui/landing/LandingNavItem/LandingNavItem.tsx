@@ -12,9 +12,13 @@ type LandingNavItemProps = Readonly<{
 	 * The children nodes.
 	 */
 	children: React.ReactNode;
+	/**
+	 * Additional classes.
+	 */
+	className?: string;
 }>;
 
-export default function LandingNavItem({ href, children }: LandingNavItemProps) {
+export default function LandingNavItem({ href, children, className }: LandingNavItemProps) {
 	// Prevents the bullet from animating on initial render.
 	const [isInitialRender, setIsInitialRender] = useState(true);
 	useEffect(() => {
@@ -22,7 +26,7 @@ export default function LandingNavItem({ href, children }: LandingNavItemProps) 
 	}, []);
 
 	return (
-		<li className={style.listItem}>
+		<li className={`${style.listItem} ${className}`}>
 			<Link href={href}>
 				<span className={`${style.bullet} ${isInitialRender ? style.preload : ""}`}></span>
 				<span className={style.text}>{children}</span>

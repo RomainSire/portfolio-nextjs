@@ -3,9 +3,16 @@ import { SiGithub, SiLinkedin, SiTwitter } from "@icons-pack/react-simple-icons"
 import Link from "next/link";
 import style from "./SocialBtns.module.scss";
 
-export default function SocialBtns() {
+type SocialBtnsType = Readonly<{
+	/**
+	 * Additional classes.
+	 */
+	className?: string;
+}>;
+
+export default function SocialBtns({ className }: SocialBtnsType) {
 	return (
-		<div className={style.wrapper}>
+		<div className={`${style.wrapper} ${className}`}>
 			<Link
 				className={`${btnStyle.button} ${btnStyle.secondary}`}
 				target="_blank"

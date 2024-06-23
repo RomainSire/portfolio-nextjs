@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 export default function ContactPage() {
 	return (
 		<div className={style.wrapper}>
-			<h1>Discutons de votre projet !</h1>
+			<h1 className="entry-animation slide">Discutons de votre projet !</h1>
 			<section>
-				<h2 className={style.subtitle}>Venez me rejoindre sur...</h2>
-				<SocialBtns />
+				<h2 className={`entry-animation slide delay-1 ${style.subtitle}`}>Venez me rejoindre sur...</h2>
+				<SocialBtns className="entry-animation slide delay-2" />
 			</section>
 			<section>
-				<h2 className={style.subtitle}>Ou envoyez-moi directement un message</h2>
+				<h2 className={`entry-animation slide delay-3 ${style.subtitle}`}>Ou envoyez-moi directement un message</h2>
 				<ContactForm />
 			</section>
 		</div>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
 	return (
-		<div className={style.wrapper}>
+		<div className={`entry-animation slide ${style.wrapper}`}>
 			<h1>Politique de confidentialité</h1>
 			<p>En vigueur au 01 juin 2024</p>
 			<p>Chez Romain SIRE EI, la protection de vos données personnelles est une priorité.</p>

@@ -38,8 +38,8 @@ export default function MyStack() {
 	return (
 		<div className={style.wrapper}>
 			<section>
-				<h2 className={style.title}>Ma stack de prédilection</h2>
-				<div className={style.badgeWrapper}>
+				<h2 className={`entry-animation slide delay-6 ${style.title}`}>Ma stack de prédilection</h2>
+				<div className={`entry-animation slide delay-7 ${style.badgeWrapper}`}>
 					{/* REACT */}
 					<Badge
 						color={SiReactHex}
@@ -78,8 +78,8 @@ export default function MyStack() {
 				</div>
 			</section>
 			<section>
-				<h2 className={style.title}>Ma boîte à outils</h2>
-				<div className={style.badgeWrapper}>
+				<h2 className={`entry-animation slide delay-8 ${style.title}`}>Ma boîte à outils</h2>
+				<div className={`entry-animation slide delay-9 ${style.badgeWrapper}`}>
 					{/* VSCODE */}
 					<Badge
 						color={SiVisualstudiocodeHex}
@@ -125,8 +125,8 @@ export default function MyStack() {
 				</div>
 			</section>
 			<section>
-				<h2 className={style.title}>Mes explorations</h2>
-				<div className={style.badgeWrapper}>
+				<h2 className={`entry-animation slide delay-10 ${style.title}`}>Mes explorations</h2>
+				<div className={`entry-animation slide delay-11 ${style.badgeWrapper}`}>
 					{/* SVELTE */}
 					<Badge
 						color={SiSvelteHex}

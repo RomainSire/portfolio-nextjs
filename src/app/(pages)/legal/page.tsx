@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function LegalPage() {
 	return (
-		<div className={style.wrapper}>
+		<div className={`entry-animation slide ${style.wrapper}`}>
 			<h1>Mentions légales</h1>
 			<p>En vigueur au 01 juin 2024</p>
 			<p>

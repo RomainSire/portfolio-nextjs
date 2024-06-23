@@ -66,7 +66,7 @@ export default function ContactForm() {
 				onSubmit={handleSubmit}
 			>
 				{" "}
-				<div>
+				<div className="entry-animation slide delay-4">
 					<label
 						className={style.label}
 						htmlFor="name"
@@ -81,7 +81,7 @@ export default function ContactForm() {
 						required
 					/>
 				</div>
-				<div>
+				<div className="entry-animation slide delay-5">
 					<label
 						className={style.label}
 						htmlFor="email"
@@ -96,7 +96,7 @@ export default function ContactForm() {
 						required
 					/>
 				</div>
-				<div>
+				<div className="entry-animation slide delay-6">
 					<label
 						className={style.label}
 						htmlFor="message"
@@ -110,7 +110,7 @@ export default function ContactForm() {
 						required
 					></textarea>
 				</div>
-				<div>
+				<div className="entry-animation slide delay-7">
 					<button
 						type="submit"
 						className={btnStyle.button}

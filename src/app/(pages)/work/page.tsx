@@ -19,6 +19,7 @@ export default async function WorkPage() {
 					key={workItem.title}
 					workItem={workItem}
 					reverse={!(index % 2 === 0)}
+					className={`entry-animation slide delay-${index}`}
 				/>
 			))}
 		</div>

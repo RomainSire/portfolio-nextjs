@@ -14,11 +14,15 @@ type WorkItemProps = {
 	 * Reverse the order of the image and the content
 	 */
 	reverse?: boolean;
+	/**
+	 * Additional classes
+	 */
+	className?: string;
 };
 
-export default function WorkItem({ workItem, reverse }: WorkItemProps) {
+export default function WorkItem({ workItem, reverse, className }: WorkItemProps) {
 	return (
-		<article className={`${style.wrapper} ${reverse ? style.reverse : ""}`}>
+		<article className={`${style.wrapper} ${reverse ? style.reverse : ""} ${className}`}>
 			<h1 className={style.title}>{workItem.title}</h1>
 			<div className={style.badges}>
 				{workItem.stack.map((stackItem) => (
