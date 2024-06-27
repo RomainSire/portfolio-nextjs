@@ -8,14 +8,15 @@ export default function WhoAmI() {
 		<section className={style.section}>
 			<h1 className={`entry-animation slide ${style.title}`}>Qui suis-je ?</h1>
 			<p className="entry-animation slide delay-1">
-				En tant qu’ancien ingénieur en reconversion dans le monde en constante évolution du développement web, je suis
-				captivé par les <strong>possibilités infinies</strong> du domaine digital.
+				Avec un background de 10 ans dans l’ingénierie et les EnR, j’ai ensuite pivoté vers le dynamique monde du
+				développement web, séduit par les <strong>possibilités infinies</strong> et la <strong>créativité</strong> qu’il
+				permet.
 			</p>
 			<p className="entry-animation slide delay-2">
 				En alliant mon sens aigu du détail à une approche collaborative, je crée des applications web qui s’alignent
-				parfaitement sur les <strong>besoins uniques de mes clients</strong>. Je maîtrise parfaitement les langages et
-				frameworks front-end les plus récents, tels que React, Next.js et TypeScript, ce qui me permet de concevoir des
-				interfaces intuitives et performantes.
+				parfaitement sur les <strong>besoins spécifiques de mes clients</strong>. Je maîtrise parfaitement les langages
+				et frameworks front-end les plus récents, tels que React, Next.js et TypeScript, ce qui me permet de concevoir
+				des interfaces intuitives et performantes.
 			</p>
 			<p className="entry-animation slide delay-3">
 				Mon parcours atypique me confère une <strong>perspective unique</strong>. Mon expertise en ingénierie me

@@ -60,9 +60,9 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 		 * MY PORTFOLIO
 		 */
 		{
-			title: "My portfolio",
+			title: "Mon portfolio",
 			description:
-				"Pour mettre en valeur mes compétences, j'ai passé quelques jours à concevoir et à coder mon propre portfolio (oui, celui que vous visitez en ce moment même !). Ca a été l'occasion de me lancer un défi : alors que j'ai plutôt l'habitude de coder des sites web d'entreprise minimalistes et épurés, j'ai cette fois adopté un style néo-brutalisme audacieux pour mon portfolio. Ce fut une façon stimulante et enrichissante d'explorer et de sortir des sentiers battus.",
+				"Pour mettre en valeur mes compétences, j'ai passé quelques jours à concevoir et à coder mon propre portfolio (oui, celui que vous visitez en ce moment même !). Ça a été l'occasion de me lancer un défi : alors que j'ai plutôt l'habitude de coder des sites web d'entreprise minimalistes et épurés, j'ai cette fois adopté un style en néo-brutalisme audacieux pour mon portfolio. Ce fut une façon stimulante et enrichissante d'explorer et de sortir des sentiers battus.",
 			stack: [
 				{
 					name: "Next.js",
