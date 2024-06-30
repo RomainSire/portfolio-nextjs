@@ -52,8 +52,8 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 				tooltip: "Le dépôt Github est privé",
 			},
 			demo: {
-				url: "",
-				tooltip: "Le backend est toujours en développement",
+				url: "https://web-app.notrelec.fr",
+				tooltip: "Voir la démo de l'app, utiliser n'importe quel identifiants (backend pas encore disponible)",
 			},
 		},
 		/**
