@@ -1,6 +1,7 @@
 import { rokkittFont, ubuntuFont } from "@/lib/fonts";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 type Props = Readonly<{
 	/**
@@ -48,6 +49,11 @@ export default function RootLayout({ children }: Props) {
 	return (
 		<html lang="fr">
 			<body className={`${ubuntuFont.variable} ${rokkittFont.variable}`}>{children}</body>
+			<Script
+				defer
+				src="https://umami.romainsire.com/script.js"
+				data-website-id="4b683a87-661a-4ad3-8d3a-942bfe54cc7b"
+			/>
 		</html>
 	);
 }
