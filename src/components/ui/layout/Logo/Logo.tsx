@@ -1,3 +1,4 @@
+import Image from "next/image";
 import style from "./Logo.module.scss";
 
 const logoTitle = "Romain Siré";
@@ -9,14 +10,18 @@ export default function Logo() {
 				className={style.link}
 				href="/"
 			>
-				<span className={style.before}>&#60;</span>
+				<Image
+					src="/icon.svg"
+					alt="Logo de l'app: une forme géométrique noire sur fond jaune."
+					width={32}
+					height={32}
+				/>
 				<span
 					className={style.text}
 					data-content={logoTitle}
 				>
 					{logoTitle}
 				</span>
-				<span className={style.after}>&#47;&#62;</span>
 			</a>
 		</div>
 	);
