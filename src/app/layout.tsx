@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 		siteName: "Romain Siré - Développeur frontend freelance",
 		images: [
 			{
-				url: "https://romainsire.com/opengraph-image.webp", // Must be an absolute URL
+				url: "https://romainsire.com/opengraph-image.jpg", // Must be an absolute URL
 				width: 1200,
 				height: 630,
 			},
