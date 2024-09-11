@@ -5,7 +5,7 @@ export default function Hero() {
 	return (
 		<section className={style.hero}>
 			<Image
-				src="/profile.jpeg"
+				src="/profile.webp"
 				alt="Une photo portrait de moi avec un parc en arrière-plan."
 				width={350}
 				height={350}
