@@ -2,6 +2,8 @@
 import { type WorkItemType } from "@/types/WorkItemType";
 import {
 	SiAngular,
+	SiAstro,
+	SiAstroHex,
 	SiMysql,
 	SiMysqlHex,
 	SiNextdotjs,
@@ -22,6 +24,40 @@ import {
  */
 export async function getWorkItems(): Promise<WorkItemType[]> {
 	return [
+		/**
+		 * DOGLIFE
+		 */
+		{
+			title: "Doglife",
+			description:
+				"Doglife est une landing page pour un éducateur canin à Montpellier, utilisant des méthodes douces et positives. Le projet a été réalisé avec Astro, intégrant plusieurs islands en React. Il inclut la conception (design et maquettage avec Figma), le développement et le déploiement. Des API backend no-code comme Airtable et Formspree ont été utilisés pour faciliter la gestion du contenu par le client.",
+			stack: [
+				{
+					name: "Astro",
+					color: SiAstroHex,
+					icon: <SiAstro />,
+				},
+				{
+					name: "TypeScript",
+					color: SiTypescriptHex,
+					icon: <SiTypescript />,
+				},
+				{
+					name: "React",
+					color: SiReactHex,
+					icon: <SiReact />,
+				},
+			],
+			image: "/work/doglife.webp",
+			github: {
+				url: "",
+				tooltip: "Le dépôt Github est privé",
+			},
+			demo: {
+				url: "https://doglife34.fr/",
+				tooltip: "Voir le site web",
+			},
+		},
 		/**
 		 * NOTRELEC
 		 */
@@ -46,7 +82,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiReact />,
 				},
 			],
-			image: "/work/notrelec.png",
+			image: "/work/notrelec.webp",
 			github: {
 				url: "",
 				tooltip: "Le dépôt Github est privé",
@@ -80,7 +116,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiSass />,
 				},
 			],
-			image: "/work/portfolio.png",
+			image: "/work/portfolio.webp",
 			github: {
 				url: "https://github.com/RomainSire/portfolio-nextJs",
 				tooltip: "Voir le code sur Github",
@@ -114,7 +150,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiSass />,
 				},
 			],
-			image: "/work/thess.png",
+			image: "/work/thess.webp",
 			github: {
 				url: "",
 				tooltip: "Le dépôt Gitlab est privé",
