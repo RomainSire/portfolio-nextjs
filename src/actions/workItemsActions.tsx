@@ -184,7 +184,7 @@ export async function getWorkItems(): Promise<WorkItemType[]> {
 					icon: <SiMysql />,
 				},
 			],
-			image: "/work/groupomania.png",
+			image: "/work/groupomania.webp",
 			github: {
 				url: "https://github.com/RomainSire/OC-P7-Social-Network",
 				tooltip: "Voir le code sur Github",
