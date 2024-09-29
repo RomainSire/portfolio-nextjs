@@ -11,10 +11,11 @@ export default function Logo() {
 				href="/"
 			>
 				<Image
-					src="/icon.svg"
-					alt="Logo de l'app: une forme géométrique noire sur fond jaune."
+					src="/logo.svg"
+					alt="Logo: un cercle vert"
 					width={32}
 					height={32}
+					className={style.logo}
 				/>
 				<span
 					className={style.text}

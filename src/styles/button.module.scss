@@ -6,6 +6,7 @@
 	align-items: center;
 	gap: var(--sm);
 	background-color: var(--color-primary);
+	color: var(--color-neutral);
 	padding: var(--md) var(--xl);
 	font-weight: 700;
 	border: 2px solid var(--color-base);
@@ -27,6 +28,7 @@
 
 .button.secondary {
 	background-color: var(--color-neutral-secondary);
+	color: var(--color-base);
 }
 
 .button.square {
