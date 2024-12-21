@@ -25,9 +25,9 @@ export default function WhoAmI() {
 				dans mes projets.
 			</p>
 			<p className="entry-animation slide delay-4">
-				En tant que <strong>développeur frontal freelance</strong>, je m’épanouis dans la flexibilité et l’autonomie que
-				ce statut me confère. Je suis particulièrement attiré par des projets de 6 mois environ avec des startups ou des
-				petites équipes. Cependant, je reste ouvert à de nouveaux défis, y compris des opportunités dans des
+				En tant que <strong>développeur front-end freelance</strong>, je m’épanouis dans la flexibilité et l’autonomie
+				que ce statut me confère. Je suis particulièrement attiré par des projets de 6 mois environ avec des startups ou
+				des petites équipes. Cependant, je reste ouvert à de nouveaux défis, y compris des opportunités dans des
 				organisations plus importantes.
 			</p>
 			<Link
