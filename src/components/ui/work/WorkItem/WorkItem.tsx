@@ -1,7 +1,6 @@
 import Badge from "@/components/base/Badge/Badge";
 import { type WorkItemType } from "@/types/WorkItemType";
 import Image from "next/image";
-import "react-tooltip/dist/react-tooltip.css";
 import WorkButton from "../WorkButton/WorkButton";
 import style from "./WorkItem.module.scss";
 

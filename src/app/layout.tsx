@@ -1,5 +1,6 @@
 import { rokkittFont, ubuntuFont } from "@/lib/fonts";
 import "@/styles/globals.scss";
+import "react-tooltip/dist/react-tooltip.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 
