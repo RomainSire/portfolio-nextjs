@@ -8,8 +8,8 @@ import { useRef } from "react";
 import style from "./ContactForm.module.scss";
 
 export default function ContactForm() {
-	const successModalRef = useRef<ModalRefType>();
-	const failModalRef = useRef<ModalRefType>();
+	const successModalRef = useRef<ModalRefType | null>(null);
+	const failModalRef = useRef<ModalRefType | null>(null);
 
 	/**
 	 * Open the modal

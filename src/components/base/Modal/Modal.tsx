@@ -36,7 +36,7 @@ export type ModalRefType = {
  * import Modal, { ModalRefType } from "@/components/base/Modal/Modal";
  *
  * function ParentComponent() {
- *   const modalRef = useRef<ModalRefType>();
+ *   const modalRef = useRef<ModalRefType | null>(null);
  *
  *   const openModal = () => {
  *     if (modalRef.current) {
