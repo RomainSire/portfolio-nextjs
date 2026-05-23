@@ -1,4 +1,5 @@
 import Badge from "@/components/base/Badge/Badge";
+import { Code } from "@phosphor-icons/react/dist/ssr";
 import {
 	SiAngular,
 	SiAstro,
@@ -29,8 +30,6 @@ import {
 	SiSvelteHex,
 	SiTypescript,
 	SiTypescriptHex,
-	SiVisualstudiocode,
-	SiVisualstudiocodeHex,
 } from "@icons-pack/react-simple-icons";
 import style from "./MyStack.module.scss";
 
@@ -82,8 +81,8 @@ export default function MyStack() {
 				<div className={`entry-animation slide delay-9 ${style.badgeWrapper}`}>
 					{/* VSCODE */}
 					<Badge
-						color={SiVisualstudiocodeHex}
-						icon={<SiVisualstudiocode />}
+						color="#007acc"
+						icon={<Code />}
 					>
 						VSCode
 					</Badge>

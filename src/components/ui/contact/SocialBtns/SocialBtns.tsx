@@ -1,5 +1,6 @@
 import btnStyle from "@/styles/button.module.scss";
-import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons";
+import { LinkedinLogoIcon } from "@phosphor-icons/react/dist/ssr";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import style from "./SocialBtns.module.scss";
 
@@ -25,7 +26,7 @@ export default function SocialBtns({ className }: SocialBtnsType) {
 				target="_blank"
 				href="https://www.linkedin.com/in/romainsire"
 			>
-				<SiLinkedin /> Linkedin
+				<LinkedinLogoIcon /> Linkedin
 			</Link>
 		</div>
 	);
