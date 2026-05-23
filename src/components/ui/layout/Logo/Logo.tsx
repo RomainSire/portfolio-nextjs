@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import style from "./Logo.module.scss";
 
@@ -6,7 +7,7 @@ const logoTitle = "Romain Siré";
 export default function Logo() {
 	return (
 		<div>
-			<a
+			<Link
 				className={style.link}
 				href="/"
 			>
@@ -23,7 +24,7 @@ export default function Logo() {
 				>
 					{logoTitle}
 				</span>
-			</a>
+			</Link>
 		</div>
 	);
 }
