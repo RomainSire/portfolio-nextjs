@@ -1,0 +1,22 @@
+services:
+  portfolio:
+    image: ghcr.io/romainsire/portfolio-nextjs:latest
+    container_name: portfolio
+    restart: unless-stopped
+    environment:
+      - GMAIL_USER=${GMAIL_USER}
+      - GMAIL_APP_PASSWORD=${GMAIL_APP_PASSWORD}
+      - CONTACT_RECIPIENT=${CONTACT_RECIPIENT}
+    networks:
+      - traefik-public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+      - "traefik.http.routers.portfolio.rule=Host(`romainsire.com`)"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
+
+networks:
+  traefik-public:
+    external: true
